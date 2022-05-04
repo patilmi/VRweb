@@ -52,7 +52,7 @@
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    float: left;
+    /* float: left; */
     padding: 0.625rem 1.25rem;
     position: relative;
     -webkit-transition: 0.1s ease-in-out;

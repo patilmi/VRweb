@@ -1,0 +1,12 @@
+.frontpage{
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+    overflow: scroll;
+    height: 100vh;
+    margin-left: 2vw;
+}
+
+body{
+    overflow: hidden;
+}
