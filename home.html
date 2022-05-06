@@ -15,6 +15,7 @@
         <a href="#schematic">Schematic</a>
         <a href="#details">Details</a>
         <a href="#NN">Neural Net Analogy</a>
+        <a href="#math">Math</a>
         <a href="#faqs">FAQs/Glossary</a>
     </div>
 
@@ -42,6 +43,7 @@
             from point light sensory input (add hover link explaining this phenomenon) from the retina,
             and then extends it to four dimensions (Link to neural net based explanation)
         </li>
+
         <li>Technical - Construct virtual four dimensional shapes, rotate them virtually, render a 3D projection of them
             onto a 3D screen (VR goggles),
             view projection rendering to develop 4D intuition, manipulate the virtual 4D objects and rotations while
@@ -59,7 +61,54 @@
 
         <h2 id="NN">Neural net analogy</h2>
 
-        <p>Math explanation with diagrams</p>
+        <p></p>
+
+        <h2 id="math">Math</h2>
+            
+        <h3>Rotation Math</h3>
+
+        <p>R = A tiny rotation, I = Identity matrix, m = Infinitesmal matrix, v = any vector
+            
+            <ol>
+
+
+                <li>R = I + m</li>
+
+                <li>((I + m) v)<sup>2</sup> = v<sup>2</sup>   (Because it's a rigid body transformation)</li>
+
+                <li>v<sup>T</sup>(I + m<sup>T</sup>)(I + m) v = v<sup>T</sup>v  (Rewrite in matrix form)</li>
+
+                <li>v<sup>T</sup>(I + m<sup>T</sup> + m) v = v<sup>T</sup>v    (Drop m<sup>2</sup> terms)</li>
+
+                <li>v<sup>T</sup>(m<sup>T</sup> + m) v = 0</li>
+
+                <li>m<sup>T</sup> + m = 0</li>
+
+                <li>therefore m must be antisymmetric</li>
+
+            </ol>
+
+        </p>
+
+        <h3>Projection Math</h3>
+
+        <img src="projection.png" alt="Projection diagram">
+
+        <p>p = 4D point vector, &#x0175; = unit vector (0, 0, 0, 1),
+            the 4D eye is also conveniently placed at &#x0175;, &pi;(p) = Projection of 4D point,
+            s = ball radius scaling due to perspective projection, s<sup>'</sup> = elongation in &pi;(p) direction 
+            
+            <ol>
+
+                <li>&pi;(p) = (p - (p dot &#x0175;)) / (1 - (p dot &#x0175;))</li>
+
+                <li>s = 1 / (1 - (p dot w))</li>
+
+                <li>s<sup>'</sup> = &#8730; (1 + &pi;<sup>2</sup>(p))</li>
+
+            </ol>
+
+        </p>
 
         <h2 id="faqs">FAQs/Glossary</h2>
 

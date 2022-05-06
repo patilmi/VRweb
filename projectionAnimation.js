@@ -32,7 +32,7 @@ var params = {
     var line3 = two.makeLine(point3[0], point3[1], point4[0], point4[1]);
     var line4 = two.makeLine(point4[0], point4[1], point1[0], point1[1]);
 
-
+    
     //Rotation scheme
     //Rotation Matrix
     //Projection
