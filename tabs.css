@@ -7,15 +7,19 @@
   *, ::before, ::after {
     box-sizing: border-box;
   }
+
   
   body {
-    color: #222;
+    color: rgb(1, 7, 14);
     font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 50rem;
+    /* em;max-width: 50r */
+    width: 80vw;
+    height: 100vh;
     padding: 2.5rem 1.25rem;
   }
+
   @media screen and (min-width: 700px) {
     body {
       font-size: 137.5%;
@@ -43,24 +47,25 @@
   }
   
   .tabBlock-tab {
-    background-color: #fff;
-    border-color: #d8d8d8;
+    /* background-color: rgb(236, 243, 224); */
+    /* border-color: black;
     border-left-style: solid;
     border-top: solid;
-    border-width: 2px;
-    color: #b5a8c5;
+    border-width: 2px; */
+    color: black;
     cursor: pointer;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 500;
     /* float: left; */
     padding: 0.625rem 1.25rem;
     position: relative;
     -webkit-transition: 0.1s ease-in-out;
             transition: 0.1s ease-in-out;
   }
-  .tabBlock-tab:last-of-type {
+
+  /* .tabBlock-tab:last-of-type {
     border-right-style: solid;
-  }
+  } */
   .tabBlock-tab::before, .tabBlock-tab::after {
     content: "";
     display: block;
@@ -69,43 +74,50 @@
     -webkit-transition: 0.1s ease-in-out;
             transition: 0.1s ease-in-out;
   }
-  .tabBlock-tab::before {
-    background-color: #b5a8c5;
+  /* .tabBlock-tab::before {
+    background-color: #443e3e;
     left: -2px;
     right: -2px;
     top: -2px;
-  }
+  } */
   .tabBlock-tab::after {
     background-color: transparent;
     bottom: -2px;
     left: 0;
     right: 0;
   }
-  @media screen and (min-width: 700px) {
+  /* @media screen and (min-width: 700px) {
     .tabBlock-tab {
       padding-left: 2.5rem;
       padding-right: 2.5rem;
     }
-  }
+  } */
   .tabBlock-tab.is-active {
     position: relative;
-    color: #975997;
+    color: rgb(0, 52, 119);
     z-index: 1;
   }
-  .tabBlock-tab.is-active::before {
-    background-color: #975997;
-  }
+  /* .tabBlock-tab.is-active::before {
+    background-color: #4b5b77;
+  } */
+
   .tabBlock-tab.is-active::after {
-    background-color: #fff;
+    background-color: rgb(172, 156, 13);
+  }
+
+  .tabBlock-tab:hover {
+    color: rgb(25, 67, 121);
+    font-weight: 400;
   }
   
   .tabBlock-content {
-    background-color: #fff;
-    border: 2px solid #d8d8d8;
+    /* background-color: rgb(236, 243, 224); */
+    /* border: 2px solid #d8d8d8; */
     padding: 1.25rem;
   }
   
   .tabBlock-pane > :last-child {
     margin-bottom: 0;
   }
+
   

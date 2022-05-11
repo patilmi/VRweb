@@ -4,9 +4,18 @@
   width: 10vw; /* Set the width of the sidebar */
   background-color: #FAF9F6; 
   overflow-x: hidden; /* Disable horizontal scroll */
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
   padding-top: 20px;
+  /* border: thin solid red; */
+}
+
+.sidenavWrapper {
+  width: 10vw;
   display: inline-block;
   vertical-align: top;
+
 }
 
 /* The navigation menu links */
@@ -20,7 +29,9 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #103d07;
+  font-weight: 550;
+  
 }
 
 /* Style page content */
