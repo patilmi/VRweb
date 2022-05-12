@@ -39,10 +39,10 @@
     padding: 3vh 7vw;
 }
 
-.slide-container > p::first-line {
+/* .slide-container > p::first-line {
     font-size: larger;
     font-weight: 600;
-}
+} */
 
 
 .NN {
