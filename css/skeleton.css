@@ -19,16 +19,17 @@ body {
     padding: 0;
     margin: 0;
     background-color: black;
+    font-family: "Lucida Console", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .frontpage {
     display: inline-block;
-    font-family: "Lucida Console", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     padding: 0;
     margin: 1vw;
     width: 98vw;
-    /* border: thin solid orange; */ 
+    /* border: thin solid orange; */
     background-color: white;
+    z-index: 100;
 }
 
 .frontpage > div {

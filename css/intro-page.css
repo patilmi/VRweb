@@ -6,17 +6,9 @@
 
 #intro p {
     margin: 0;
-    padding: 3vh 7vw;
+    padding: 3em 20em;
 }
 
-/* #intro p::first-line {
-    font-size: larger;
-    font-weight: 600;
-} */
-
-#intro p {
-    padding: 3em 15em;
-}
 
 #intro .bold {
     font-size: larger;
