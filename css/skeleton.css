@@ -1,0 +1,47 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.frontpageWrapper {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1vw;
+    /* border: thin solid greenyellow; */
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.frontpage {
+    display: inline-block;
+    font-family: "Lucida Console", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    padding: 0;
+    margin: 1vw;
+    width: 98vw;
+    /* border: thin solid orange; */ 
+    background-color: white;
+}
+
+.frontpage > div {
+    min-height: 75%;
+    max-height: 100%;
+    padding: 5vh 3vw;
+}
+
+.frontpage > h2, h1{
+    padding: 0vh 3vw 0vh 3vw;
+    text-align: center;
+}
+
+.frontpage * {
+    line-height: 1.5em;
+}

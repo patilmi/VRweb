@@ -1,0 +1,32 @@
+#cover-page {
+    font-family: Copperplate, Papyrus, fantasy;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    /* border: thin solid red; */
+    color:#e30;
+}
+
+#cover-page img {
+    padding: 0;
+    margin: 30vh 0 0 0;
+    /* border: thin solid white; */
+    height: 30vh;
+    box-shadow: none;
+}
+
+#cover-page .title {
+    font-size: 5vh;
+    text-shadow: 0 0 .2em;
+    height: 30vh;
+    /* border: thin solid yellow; */
+    padding: 10vh 0 0 0;
+}
+
+#cover-page .title .sub {
+    display: block;
+    font-size: smaller;
+    opacity: .3;
+    text-shadow: none;
+}

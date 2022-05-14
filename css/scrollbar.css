@@ -1,0 +1,18 @@
+.frontpageWrapper {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.frontpageWrapper::-webkit-scrollbar {
+    width: 1vw;
+}
+
+.frontpageWrapper::-webkit-scrollbar-track {
+    background: black;
+}
+
+.frontpageWrapper::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: .5vw;
+    border: .35vw solid black;
+}
