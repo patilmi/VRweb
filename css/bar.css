@@ -1,0 +1,53 @@
+.bar {
+    text-align: center;
+    color: gray;
+    font-size: 2vmin;
+    /* border: thin solid orange; */
+ }
+
+ .bar.top {
+     height: 30vmin;
+ }
+
+.bar .panel {
+    position: sticky;
+    width: 100%;
+    /* border: thin solid yellow; */
+
+}
+
+.bar.top .panel {
+    top: 0;
+}
+
+.bar.bottom .panel {
+    bottom: 0;
+}
+
+
+.bar .panel > div {
+    margin: 1vmin 5vw;
+    /* border-top: thin solid #333; */
+    display: inline-block;
+    width: 16vmin;
+}
+
+.bar .panel svg {
+    width: 5vmin;
+    height: 5vmin;
+    stroke-width: 1;
+    stroke: gray;
+    stroke-linecap: round;
+    margin: 1vmin;
+    fill: none;
+    stroke-linejoin: round;
+}
+
+.bar .panel > div:hover > svg {
+    stroke: white;
+    text-shadow: 0 0 .1em white;
+}
+
+.bar .panel > div:hover {
+    color: white;
+}
