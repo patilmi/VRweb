@@ -1,0 +1,16 @@
+
+#intro {
+    text-align: justify;
+    text-align: center;
+}
+
+#intro p {
+    margin: 0;
+    padding: 3em 20em;
+}
+
+
+#intro .bold {
+    font-size: larger;
+    font-weight: bold;
+}
