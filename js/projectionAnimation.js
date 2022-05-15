@@ -37,10 +37,12 @@ var params = {
     line3.linewidth = lineWidth;
     line4.linewidth = lineWidth;
 
-    line1.stroke = 'yellow';
-    line2.stroke = 'yellow';
-    line3.stroke = 'yellow';
-    line4.stroke = 'yellow';
+    var color = 'yellow';
+
+    line1.stroke = color;
+    line2.stroke = color;
+    line3.stroke = color;
+    line4.stroke = color;
 
     
 
@@ -64,95 +66,95 @@ var params = {
     two.bind('update', update);
     two.play();
 
-    function update(frameCount) {
-        
-
-        var shift = 700;
-
-
-
-        var p1xupdate = point1[0]*ptScale + 75*Math.sin(0.09*frameCount) + 700;
-        var p1yupdate = point1[1]*ptScale + 45*Math.sin(0.05*frameCount) + 700;
-        var p2xupdate = point2[0]*ptScale + 80*Math.sin(0.08*frameCount) + 700;
-        var p2yupdate = point2[1]*ptScale + 60*Math.sin(0.04*frameCount) + 700;
-        var p3xupdate = point3[0]*ptScale + 70*Math.sin(0.05*frameCount) + 700;
-        var p3yupdate = point3[1]*ptScale + 96*Math.sin(0.06*frameCount) + 700;
-        var p4xupdate = point4[0]*ptScale + 58*Math.sin(0.06*frameCount) + 700;
-        var p4yupdate = point4[1]*ptScale + 40*Math.sin(0.04*frameCount) + 700;
-
-
-
-
-
-        line1.vertices[0].set(p1xupdate, p1yupdate);
-        line4.vertices[1].set(p1xupdate, p1yupdate);
-        
-        line1.vertices[1].set(p2xupdate, p2yupdate);
-        line2.vertices[0].set(p2xupdate, p2yupdate);
-        
-        line2.vertices[1].set(p3xupdate, p3yupdate);
-        line3.vertices[0].set(p3xupdate, p3yupdate);
-
-        line3.vertices[1].set(p4xupdate, p4yupdate);
-        line4.vertices[0].set(p4xupdate, p4yupdate);
-
-
-    }
-
-
-
     // function update(frameCount) {
-
-
         
 
-    //     //make it time based
-    //     var factor = 0.00001;
-    //     var frequencyFactor = 0.07;
-
-    //     var sinFrameCount = Math.sin(frameCount*frequencyFactor);
-    //     var cosFrameCount = Math.cos(frameCount*frequencyFactor);
-
-    //     var angularRotationSpeed = -1;
+    //     var shift = 700;
 
 
-    //     var alpha = angularRotationSpeed + 0*Math.sin(frameCount*frequencyFactor);
-    //     var beta = angularRotationSpeed + 20*Math.pow(cosFrameCount, 1);
-    //     var gamma = angularRotationSpeed + 20*Math.pow(sinFrameCount, 1);
 
-    //     var xy = alpha*factor;
-    //     var xz = beta*factor;
-    //     var yz = gamma*factor;
+    //     var p1xupdate = point1[0]*ptScale + 160*Math.sin(0.09*frameCount) + 700;
+    //     var p1yupdate = point1[1]*ptScale + 135*Math.sin(0.05*frameCount) + 700;
+    //     var p2xupdate = point2[0]*ptScale + 150*Math.cos(0.08*frameCount) + 700;
+    //     var p2yupdate = point2[1]*ptScale + 220*Math.cos(0.04*frameCount) + 700;
+    //     var p3xupdate = point3[0]*ptScale + 200*Math.sin(0.05*frameCount) + 700;
+    //     var p3yupdate = point3[1]*ptScale + 200*Math.sin(0.06*frameCount) + 700;
+    //     var p4xupdate = point4[0]*ptScale + 132*Math.sin(0.06*frameCount) + 700;
+    //     var p4yupdate = point4[1]*ptScale + 120*Math.cos(0.04*frameCount) + 700;
 
-    //     var rotationRow1 = [1, xy, xz];
-    //     var rotationRow2 = [-xy, 1, yz];
-    //     var rotationRow3 = [-xz, -yz, 1];
 
-    //     var rotationMatrix = math.matrix([rotationRow1, rotationRow2, rotationRow3]);
 
-    //     for(i = 0; i < 100; i++) {
-    //         point1 = math.multiply(rotationMatrix, point1);
-    //         point2 = math.multiply(rotationMatrix, point2);
-    //         point3 = math.multiply(rotationMatrix, point3);
-    //         point4 = math.multiply(rotationMatrix, point4);
-    //     }         
 
+
+    //     line1.vertices[0].set(p1xupdate, p1yupdate);
+    //     line4.vertices[1].set(p1xupdate, p1yupdate);
         
-    //     var piPoint1 = shiftPointToCenter(projectPoint(point1));
-    //     var piPoint2 = shiftPointToCenter(projectPoint(point2));
-    //     var piPoint3 = shiftPointToCenter(projectPoint(point3));
-    //     var piPoint4 = shiftPointToCenter(projectPoint(point4));
-
-    //     line1.vertices[0].set(piPoint1[0]*ptScale, piPoint1[1]*ptScale);
-    //     line1.vertices[1].set(piPoint2[0]*ptScale, piPoint2[1]*ptScale);
-    //     line2.vertices[0].set(piPoint2[0]*ptScale, piPoint2[1]*ptScale);
-    //     line2.vertices[1].set(piPoint3[0]*ptScale, piPoint3[1]*ptScale);
-    //     line3.vertices[0].set(piPoint3[0]*ptScale, piPoint3[1]*ptScale);
-    //     line3.vertices[1].set(piPoint4[0]*ptScale, piPoint4[1]*ptScale);
-    //     line4.vertices[0].set(piPoint4[0]*ptScale, piPoint4[1]*ptScale);
-    //     line4.vertices[1].set(piPoint1[0]*ptScale, piPoint1[1]*ptScale);
+    //     line1.vertices[1].set(p2xupdate, p2yupdate);
+    //     line2.vertices[0].set(p2xupdate, p2yupdate);
         
+    //     line2.vertices[1].set(p3xupdate, p3yupdate);
+    //     line3.vertices[0].set(p3xupdate, p3yupdate);
+
+    //     line3.vertices[1].set(p4xupdate, p4yupdate);
+    //     line4.vertices[0].set(p4xupdate, p4yupdate);
+
+
     // }
+
+
+
+    function update(frameCount) {
+
+
+        
+
+        //make it time based
+        var factor = 0.00001;
+        var frequencyFactor = 0.07;
+
+        var sinFrameCount = Math.sin(frameCount*frequencyFactor);
+        var cosFrameCount = Math.cos(frameCount*frequencyFactor);
+
+        var angularRotationSpeed = -1;
+
+
+        var alpha = angularRotationSpeed + 0*Math.sin(frameCount*frequencyFactor);
+        var beta = angularRotationSpeed + 20*Math.pow(cosFrameCount, 1);
+        var gamma = angularRotationSpeed + 20*Math.pow(sinFrameCount, 1);
+
+        var xy = alpha*factor;
+        var xz = beta*factor;
+        var yz = gamma*factor;
+
+        var rotationRow1 = [1, xy, xz];
+        var rotationRow2 = [-xy, 1, yz];
+        var rotationRow3 = [-xz, -yz, 1];
+
+        var rotationMatrix = math.matrix([rotationRow1, rotationRow2, rotationRow3]);
+
+        for(i = 0; i < 100; i++) {
+            point1 = math.multiply(rotationMatrix, point1);
+            point2 = math.multiply(rotationMatrix, point2);
+            point3 = math.multiply(rotationMatrix, point3);
+            point4 = math.multiply(rotationMatrix, point4);
+        }         
+
+        
+        var piPoint1 = shiftPointToCenter(projectPoint(point1));
+        var piPoint2 = shiftPointToCenter(projectPoint(point2));
+        var piPoint3 = shiftPointToCenter(projectPoint(point3));
+        var piPoint4 = shiftPointToCenter(projectPoint(point4));
+
+        line1.vertices[0].set(piPoint1[0]*ptScale, piPoint1[1]*ptScale);
+        line1.vertices[1].set(piPoint2[0]*ptScale, piPoint2[1]*ptScale);
+        line2.vertices[0].set(piPoint2[0]*ptScale, piPoint2[1]*ptScale);
+        line2.vertices[1].set(piPoint3[0]*ptScale, piPoint3[1]*ptScale);
+        line3.vertices[0].set(piPoint3[0]*ptScale, piPoint3[1]*ptScale);
+        line3.vertices[1].set(piPoint4[0]*ptScale, piPoint4[1]*ptScale);
+        line4.vertices[0].set(piPoint4[0]*ptScale, piPoint4[1]*ptScale);
+        line4.vertices[1].set(piPoint1[0]*ptScale, piPoint1[1]*ptScale);
+        
+    }
 
 
 
