@@ -25,7 +25,7 @@
 }
 
 
-.bar .panel > div {
+.bar .panel > a > div, .bar .panel > div {
     margin: 1vmin 5vw;
     /* border-top: thin solid #333; */
     display: inline-block;
@@ -43,11 +43,24 @@
     stroke-linejoin: round;
 }
 
-.bar .panel > div:hover > svg {
+ a:link, a:visited{
+    text-decoration: none;
+    color: gray;
+
+}
+
+a:link:active, a:visited:active {
+    text-decoration: none;
+    color: gray;
+}
+
+
+.bar .panel > a:hover svg {
     stroke: white;
     text-shadow: 0 0 .1em white;
 }
 
-.bar .panel > div:hover {
+.bar .panel > a:hover > div {
     color: white;
 }
+

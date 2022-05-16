@@ -45,6 +45,7 @@ list-style: none;
     transition: 0.5s;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
+    text-shadow: 0.01em 0.01em 0.30em rgb(196, 233, 110);
 }
 
 .box.active
@@ -71,6 +72,8 @@ list-style: none;
     align-items: center;
     justify-content: center;
     color: rgb(196, 233, 110);
+    
+
     text-transform: uppercase;
     letter-spacing: 4px;
     width: 40px;
