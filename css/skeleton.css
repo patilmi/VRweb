@@ -38,11 +38,17 @@ body {
     padding: 5vh 3vw;
 }
 
-.frontpage > h2, h1{
-    padding: 0vh 3vw 0vh 3vw;
-    text-align: center;
-}
-
 .frontpage * {
     line-height: 1.5em;
+}
+
+h2, h1 {
+    padding: 2vh 3vw;
+    text-align: center;
+    /* border: thin solid yellow; */
+}
+
+.raised-box {
+    background-color: #f7f7f7;
+    box-shadow: .2em .3em 1em gray;
 }

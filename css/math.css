@@ -1,0 +1,42 @@
+
+#rotation-math {
+    /* border: thin solid gray; */
+    text-align: center;
+}
+
+#rotation-math .row {
+    display: flex;
+}
+
+#rotation-math .col {
+    flex: 20%;
+    /* border: thin solid red; */
+    padding: 3em;
+}
+
+
+.math {
+    color: gray;
+    font-weight: bold;
+    font-stretch: narrower;
+}
+
+span.math {
+    /* white-space: nowrap; */
+}
+
+table.matrix {
+    text-align: center;
+    border: .2em solid gray;
+    border-style: none solid;
+    display: inline-block;
+}
+
+table.matrix tr {
+    border: thin solid orange;
+}
+
+table.matrix tr td {
+    width: 2em;
+    padding: .3em .3em;
+}
