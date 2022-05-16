@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="css/bar.css">
     <link rel="stylesheet" href="css/cover-page.css">
     <link rel="stylesheet" href="css/intro-page.css">
+    <link rel="stylesheet" href="css/math.css">
 
     <style>
+
     </style>
 </head>
 
@@ -172,32 +174,104 @@
             </div>
 
 
+            <div id=rotation-math>
+                <div class=raised-box>
+                    <h2>Rotations</h2>
+                    <div class="row">
 
-            <h2 id="math">Math</h2>
-            <div class="rotationMath">
-                <h3>Rotation Math</h3>
+                        <div class="col">
+                            <p>
+                                To view an object from all angles, we employ continuous rotations,
+                                and marstering rotations in 4 dimensions is core to our technology.
+                            </p>
+                            <p>
+                                Rotations are continuous linear transformations that preserve shapes
+                                (preserving distances between points, or equivalantly,
+                                preserving lengths of vectors in space).
+                            </p>
+                            <p>
+                                For a rotation <span class=math>R</span> acting on any vector <span class=math>v</span>,
+                                <span class=math>(Rv)<sup>2</sup> = v<sup>2</sup></span> or, in matrix form,
+                                <span class=math>v<sup>T</sup>R<sup>T</sup>Rv = v<sup>T</sup>v</span>,
+                                leading to the characterization
+                            </p>
+                            <p class=math>
+                                R<sup>T</sup>R = I
+                            </p>
+                        </div>
 
-                <p>
-                    R = A tiny rotation, I = Identity matrix, m = Infinitesmal matrix, v = any vector
-                <ol>
+                        <div class="col">
+                            <p>
+                                Every rotation is equivalant to a sequence of infinitesimal (tiny) rotations.
+                                We can construct arbitrary rotations if we know the form of an
+                                <strong>arbitrary infinitesimal rotation</strong>.
+                                We seek such a rotation in the form
+                            </p>
+                            <p class=math>
+                                R = I + m
+                            </p>
+                            <p>
+                                where <span class=math>m</span> is an infinitesimal matrix
+                                (measureing the departure of <span class=math>R</span> from the identitity
+                                matrix <span class=math>I</span>) constrained by
+                            </p>
+                            <p class=math>
+                                I = R<sup>T</sup>R = (I + m)<sup>T</sup>(I + m)
+                                <br />
+                                = I + m + m<sup>T</sup> + m<sup>T</sup>m
+                            </p>
+                            <p>
+                                Dropping <span class=math>m<sup>T</sup>m</span> (second order infinitesimal)
+                            </p>
+                            <p>
+                                <span class=math>m + m<sup>T</sup> = 0</span> or <span class=math>m<sup>T</sup> =
+                                    -m</span>
+                            </p>
 
-                    <li>R = I + m</li>
+                        </div>
 
-                    <li>((I + m) v)<sup>2</sup> = v<sup>2</sup> (Because it's a rigid body transformation)</li>
-
-                    <li>v<sup>T</sup>(I + m<sup>T</sup>)(I + m) v = v<sup>T</sup>v (Rewrite in matrix form)</li>
-
-                    <li>v<sup>T</sup>(I + m<sup>T</sup> + m) v = v<sup>T</sup>v (Drop m<sup>2</sup> terms)</li>
-
-                    <li>v<sup>T</sup>(m<sup>T</sup> + m) v = 0</li>
-
-                    <li>m<sup>T</sup> + m = 0</li>
-
-                    <li>therefore m must be antisymmetric</li>
-
-                </ol>
-
-                </p>
+                        <div class="col">
+                            <p>
+                                Thus, an infinitesimal rotation matrix is a sum of the identitity matrix
+                                and an infinitesimal antisymmetric matrix.
+                            </p>
+                            <p>
+                                Such a rotation in 4 dimensions has the explicit form
+                            </p>
+                            <p class=math>
+                            <table class="math matrix">
+                                <tr>
+                                    <td>1</td>
+                                    <td>a</td>
+                                    <td>b</td>
+                                    <td>c</td>
+                                </tr>
+                                <tr>
+                                    <td>-a</td>
+                                    <td>1</td>
+                                    <td>d</td>
+                                    <td>e</td>
+                                </tr>
+                                <tr>
+                                    <td>-b</td>
+                                    <td>-d</td>
+                                    <td>1</td>
+                                    <td>f</td>
+                                </tr>
+                                <tr>
+                                    <td>-c</td>
+                                    <td>-e</td>
+                                    <td>-f</td>
+                                    <td>1</td>
+                                </tr>
+                            </table>
+                            </p>
+                            <p>
+                                characterized by 6 independant, infinitesimal paramters (<span class=math>a...f</span>).
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -256,10 +330,10 @@
                         Code
                     </div>
                 </div>
-        
+
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="24"
-                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
                         <desc>Download more icon variants from https://tabler-icons.io/i/brand-youtube</desc>
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -271,7 +345,8 @@
                     </div>
                 </div>
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mailbox" viewBox="0 0 24 24">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mailbox"
+                        viewBox="0 0 24 24">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M10 21v-6.5a3.5 3.5 0 0 0 -7 0v6.5h18v-6a4 4 0 0 0 -4 -4h-10.5" />
                         <path d="M12 11v-8h4l2 2l-2 2h-4" />
@@ -284,7 +359,7 @@
             </div>
         </div>
 
-    
+
     </div>
 </body>
 
