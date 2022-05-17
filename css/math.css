@@ -1,19 +1,18 @@
 
-#rotation-math {
-    /* border: thin solid gray; */
-    text-align: center;
-}
-
-#rotation-math .row {
+.row {
     display: flex;
 }
 
-#rotation-math .col {
-    flex: 20%;
+.row .col {
+    flex: 1;
     /* border: thin solid red; */
     padding: 3em;
 }
 
+.row .col img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 .math {
     color: gray;
@@ -39,4 +38,36 @@ table.matrix tr {
 table.matrix tr td {
     width: 2em;
     padding: .3em .3em;
+}
+
+
+.raised-box img {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}
+
+
+.frac {
+    display: inline-block;
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+.frac hr {
+    border-top: .15em solid gray;
+}
+
+pip::after {
+    content: '\03C0(p)'
+}
+
+.math span.sqrt {
+    border-top: .15em solid gray;
+    padding: .3em 0 0 .1em;
+}
+
+.spacer {
+    padding: 0 1em;
 }
