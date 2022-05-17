@@ -10,9 +10,12 @@ var params = {
     var two = new Two(params).appendTo(elem);
     
     // Two.js has convenient methods to make shapes and insert them into the scene.
-  
+    
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
 
-    var span = 0.1;
+
+    var span = 0.00006*windowWidth;
     var longSideScale = 1.3;
     var ptScale = 3000;
 
@@ -65,42 +68,6 @@ var params = {
 
     two.bind('update', update);
     two.play();
-
-    // function update(frameCount) {
-        
-
-    //     var shift = 700;
-
-
-
-    //     var p1xupdate = point1[0]*ptScale + 160*Math.sin(0.09*frameCount) + 700;
-    //     var p1yupdate = point1[1]*ptScale + 135*Math.sin(0.05*frameCount) + 700;
-    //     var p2xupdate = point2[0]*ptScale + 150*Math.cos(0.08*frameCount) + 700;
-    //     var p2yupdate = point2[1]*ptScale + 220*Math.cos(0.04*frameCount) + 700;
-    //     var p3xupdate = point3[0]*ptScale + 200*Math.sin(0.05*frameCount) + 700;
-    //     var p3yupdate = point3[1]*ptScale + 200*Math.sin(0.06*frameCount) + 700;
-    //     var p4xupdate = point4[0]*ptScale + 132*Math.sin(0.06*frameCount) + 700;
-    //     var p4yupdate = point4[1]*ptScale + 120*Math.cos(0.04*frameCount) + 700;
-
-
-
-
-
-    //     line1.vertices[0].set(p1xupdate, p1yupdate);
-    //     line4.vertices[1].set(p1xupdate, p1yupdate);
-        
-    //     line1.vertices[1].set(p2xupdate, p2yupdate);
-    //     line2.vertices[0].set(p2xupdate, p2yupdate);
-        
-    //     line2.vertices[1].set(p3xupdate, p3yupdate);
-    //     line3.vertices[0].set(p3xupdate, p3yupdate);
-
-    //     line3.vertices[1].set(p4xupdate, p4yupdate);
-    //     line4.vertices[0].set(p4xupdate, p4yupdate);
-
-
-    // }
-
 
 
     function update(frameCount) {
