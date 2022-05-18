@@ -1,0 +1,26 @@
+
+body {
+    padding: 5vw 5vh 5vw 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-shadow: 0.01em 0.01em 0.15em #1b1a1a;
+    background-color: #f8f7f0;
+}
+
+ol,li {
+    padding: 5vh 5vw 5vh 5vw;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-weight: lighter;
+}
+
+
+
+
+
