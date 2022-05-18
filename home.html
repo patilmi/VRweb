@@ -11,14 +11,18 @@
     <link rel="stylesheet" href="css/cover-page.css">
     <link rel="stylesheet" href="css/intro-page.css">
     <link rel="stylesheet" href="css/math.css">
+    <script src="js/projectionAnimation.js"></script>
+    <script src="js/randomAnimation.js"></script>
+    <script src="js/two.min.js"></script>
+    <script src="js/math.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <style>
 
-    </style>
+
 </head>
 
 
-<body>
+<body onload="init(); init2();">
     <div class="frontpageWrapper">
 
         <div class="top bar">
@@ -146,6 +150,32 @@
                     facilitate intution. (Loss function Machine learning link).
                 </div>
             </div>
+
+
+            <div>
+                <p>Both animations are of straight lines drawn between animated vertices.</p>
+
+                <p>Cover one eye to view to cancel out the stereoscopic 3D effect</p>
+
+                <div id="animations">
+                    <div id="animation">
+                        Rotation projection
+        
+                    </div>
+        
+                    <div id="randomAnimation">
+                        Random warping
+                    </div>
+    
+                </div>
+
+            </div>
+            
+           
+            
+            
+
+
 
 
 
@@ -310,12 +340,20 @@
             </div>
 
 
+
+
+    
+
+
         </div>
 
 
         <div class="bottom bar">
             <div class="panel">
-                <div>
+                
+            
+                <a href="html/glossary.html"><div>
+                    
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark"
                         viewBox="0 0 24 24">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -325,8 +363,10 @@
                     <div>
                         FAQ
                     </div>
-                </div>
-                <div>
+                
+                </div></a>
+            
+                <a href="https://github.com/patilmi/VR4D"><div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
                         viewBox="0 0 24 24">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -336,9 +376,9 @@
                     <div>
                         Code
                     </div>
-                </div>
+                </div></a>
 
-                <div>
+                <a href="https://www.youtube.com/watch?v=IGM0zfpOdsg&ab_channel=MihirPatil"><div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -350,8 +390,9 @@
                     <div>
                         Videos
                     </div>
-                </div>
-                <div>
+                </div></a>
+
+               <a href=""> <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mailbox"
                         viewBox="0 0 24 24">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -362,7 +403,8 @@
                     <div>
                         Contact
                     </div>
-                </div>
+                </div></a>
+
             </div>
         </div>
 

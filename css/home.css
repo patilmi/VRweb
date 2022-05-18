@@ -16,7 +16,6 @@ img {
     display: grid;
     font-size: 1.5vw;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-gap: 2vw;
     text-align: justify;
     /* background-color: rgb(236, 232, 213); */
@@ -32,6 +31,7 @@ img {
 
 .details {
     text-align: center;
+    background-color: black;
 }
 
 .details > embed {
@@ -55,3 +55,18 @@ img {
     font-size: 1.3vw;
     
 }
+
+#animations {
+    background-color: white;
+    height: 50vh;
+    display: grid;
+    font-size: 1.5vw;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vh 0vw;
+}
+
+#animation, #randomAnimation{
+    background-color: white;
+    color: black;
+}
+

@@ -2,22 +2,24 @@
 
 // Make an instance of two and place it on the page.
 var params = {
-    fullscreen: true
+    fitted: true
   };
 
+
   function init(){
-    var elem = document.body;
-    var two = new Two(params).appendTo(elem);
-    
-    // Two.js has convenient methods to make shapes and insert them into the scene.
-    
-    var windowWidth = $(window).width();
-    var windowHeight = $(window).height();
+    var elem = $('#animation');
+    var two = new Two(params).appendTo(elem[0]);
 
 
-    var span = 0.00006*windowWidth;
+    var bodyWidth = elem.width();
+    var bodyHeight = elem.height();
+
+    var span = 0.1;
     var longSideScale = 1.3;
-    var ptScale = 3000;
+    var ptScale = ((bodyWidth + bodyHeight) / 2) * 1.5;
+    
+
+    
 
     var lineWidth = 4;
     //var rect = two.makeRectangle(x, y, width, height);
@@ -40,14 +42,12 @@ var params = {
     line3.linewidth = lineWidth;
     line4.linewidth = lineWidth;
 
-    var color = 'yellow';
+    var color = 'black';
 
     line1.stroke = color;
     line2.stroke = color;
     line3.stroke = color;
     line4.stroke = color;
-
-    
 
 
     function projectPoint(v) {
@@ -56,24 +56,27 @@ var params = {
         return math.multiply(1/(1-vDotZ), math.subtract(v, math.multiply(vDotZ, zHat)))._data;
     }
 
-    function shiftPointToCenter(p, shift = 0.25) {
+    function shiftPointToCenter(p) {
 
-        var shifted = [p[0] + shift, p[1] + shift, p[2]];
+        var xShift = (bodyWidth/2) / ptScale;
+        var yShift = (bodyHeight/2) / ptScale;
+        var shifted = [p[0] + xShift, p[1] + yShift, p[2]];
         return shifted;
     }
     
     
     // Don’t forget to tell two to draw everything to the screen
     two.update();
+    
 
     two.bind('update', update);
     two.play();
 
 
+
+
     function update(frameCount) {
 
-
-        
 
         //make it time based
         var factor = 0.00001;
@@ -82,7 +85,7 @@ var params = {
         var sinFrameCount = Math.sin(frameCount*frequencyFactor);
         var cosFrameCount = Math.cos(frameCount*frequencyFactor);
 
-        var angularRotationSpeed = -1;
+        var angularRotationSpeed = 0;
 
 
         var alpha = angularRotationSpeed + 0*Math.sin(frameCount*frequencyFactor);
@@ -129,5 +132,6 @@ var params = {
     
 
   }
+
 
   
