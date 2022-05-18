@@ -6,17 +6,33 @@ var params = {
   };
 
 
-  function init(){
+  function initA(){
     var elem = $('#animation');
     var two = new Two(params).appendTo(elem[0]);
 
+      
+      $(window).resize(() => {
+          resized();
+      })
+      
 
-    var bodyWidth = elem.width();
-    var bodyHeight = elem.height();
+
+      var bodyWidth, bodyHeight, ptScale;
+
+
+      function resized() {
+          bodyWidth = elem.width();
+          bodyHeight = elem.height();
+          ptScale = ((bodyWidth + bodyHeight) / 2) * 1.5;
+      }
+
+      resized();
+
+
 
     var span = 0.1;
     var longSideScale = 1.3;
-    var ptScale = ((bodyWidth + bodyHeight) / 2) * 1.5;
+    
     
 
     

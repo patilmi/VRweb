@@ -4,25 +4,32 @@
 <head>
 
     <link rel="stylesheet" href="css/home.css">
-
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/bar.css">
     <link rel="stylesheet" href="css/cover-page.css">
     <link rel="stylesheet" href="css/intro-page.css">
     <link rel="stylesheet" href="css/math.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/two.dev.js"></script>
+    <script src="js/math.min.js"></script>
+
     <script src="js/projectionAnimation.js"></script>
     <script src="js/randomAnimation.js"></script>
-    <script src="js/two.min.js"></script>
-    <script src="js/math.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-
-
+    <script>
+        function initDelayed() {
+            setTimeout(() => {
+                initA();
+                initR();
+            }, 100)
+        }
+    </script>
 </head>
 
 
-<body onload="init(); init2();">
+<body onload="initDelayed();">
     <div class="frontpageWrapper">
 
         <div class="top bar">
@@ -161,17 +168,17 @@
 
                 
 
-                <div id="animations">
-                    <div id="animation">
-                        Rotation projection
-        
+                <div id="animations" class=row>
+                    <div class=col>
+                        <div id="animation"></div>
                     </div>
-        
-                    <div id="randomAnimation">
-                        Random warping
+                    <div class=col>
+                        <div id="randomAnimation"></div>
                     </div>
-    
                 </div>
+
+
+
 
                 <p>Even when viewed with one eye the rotation animation is instantly recognizable as an object in 3D space</p>
 
@@ -326,8 +333,8 @@
                     <div class=row>
                         <div class=col style="flex: 2;">
                             <p>
-                                The 4D space (<span class=math>xyzw</span>) is projected onto a 3D screen (the <span class=math>xyz</span>
-                                hyperplane)
+                                The 4D space (<span class=math>xyzw</span>) is projected onto a 3D screen 
+                                (the <span class=math>xyz</span> hyperplane)
                                 from the perspective of an eye placed at <span class=math>&#x0175;</span>
                                 (the unit vector in <span class=math>w</span> direction)
                             </p>
@@ -346,9 +353,9 @@
                             </div>
                             <p>
                                 A tiny sphere of radius <span class=math>r</span> placed at
-                                <span class=math>p</span> will project to an ellipsoid with its largest radius
+                                <span class=math>p</span> will project to an ellipsoid with its longest radius
                                 <span class=math>r<sub>+</sub></span> parallel to <span class=math>&pi;(p)</span>
-                                and the smallest radius <span class=math>r<sub>o</sub></span> perpendicular to
+                                and the shortest radii <span class=math>r<sub>o</sub></span> perpendicular to
                                 <span class=math>p</span>.
                             </p>
                             <br/>

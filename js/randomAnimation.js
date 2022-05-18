@@ -5,18 +5,34 @@ var params = {
     fitted: true
   };
 
-  function init2(){
+  function initR(){
     var elem = $('#randomAnimation');
     var two = new Two(params).appendTo(elem[0]);
     
+
+
+      $(window).resize(() => {
+          resized();
+      })
+
+
+
+      var bodyWidth, bodyHeight, ptScale;
+
+
+      function resized() {
+          bodyWidth = elem.width();
+          bodyHeight = elem.height();
+          ptScale = ((bodyWidth + bodyHeight) / 2) * 1.5;
+      }
+
+      resized();
+
+
     // Two.js has convenient methods to make shapes and insert them into the scene.
     
-    var bodyWidth = elem.width();
-    var bodyHeight = elem.height();
-
     var span = 0.1;
-    var longSideScale = (bodyWidth / bodyHeight) * 1.3;
-    var ptScale = ((bodyWidth + bodyHeight) / 2) * 1.5;
+    var longSideScale = (bodyWidth / bodyHeight) * .3;
 
     var lineWidth = 4;
     //var rect = two.makeRectangle(x, y, width, height);
@@ -70,25 +86,18 @@ var params = {
 
     function update(frameCount) {
         
-
         var shiftRight = bodyWidth/2;
         var shiftDown = bodyHeight/2;
 
-
-
-        var p1xupdate = point1[0]*ptScale + 160*Math.sin(0.09*frameCount) + shiftRight;
-        var p1yupdate = point1[1]*ptScale + 135*Math.sin(0.05*frameCount) + shiftDown;
-        var p2xupdate = point2[0]*ptScale + 150*Math.cos(0.08*frameCount) + shiftRight;
-        var p2yupdate = point2[1]*ptScale + 220*Math.cos(0.04*frameCount) + shiftDown;
-        var p3xupdate = point3[0]*ptScale + 200*Math.sin(0.05*frameCount) + shiftRight;
-        var p3yupdate = point3[1]*ptScale + 200*Math.sin(0.06*frameCount) + shiftDown;
-        var p4xupdate = point4[0]*ptScale + 132*Math.sin(0.06*frameCount) + shiftRight;
-        var p4yupdate = point4[1]*ptScale + 120*Math.cos(0.04*frameCount) + shiftDown;
-
-
-
-
-
+        var p1xupdate = point1[0]*ptScale + 16*Math.sin(0.09*frameCount) + shiftRight;
+        var p1yupdate = point1[1]*ptScale + 13*Math.sin(0.1*frameCount) + shiftDown;
+        var p2xupdate = point2[0]*ptScale + 15*Math.cos(0.08*frameCount) + shiftRight;
+        var p2yupdate = point2[1]*ptScale + 22*Math.cos(0.04*frameCount) + shiftDown;
+        var p3xupdate = point3[0]*ptScale + 20*Math.sin(0.05*frameCount) + shiftRight;
+        var p3yupdate = point3[1]*ptScale + 20*Math.sin(0.06*frameCount) + shiftDown;
+        var p4xupdate = point4[0]*ptScale + 13*Math.sin(0.07*frameCount) + shiftRight;
+        var p4yupdate = point4[1] * ptScale + 12 * Math.cos(0.11 * frameCount) + shiftDown;
+        
         line1.vertices[0].set(p1xupdate, p1yupdate);
         line4.vertices[1].set(p1xupdate, p1yupdate);
         
@@ -100,8 +109,6 @@ var params = {
 
         line3.vertices[1].set(p4xupdate, p4yupdate);
         line4.vertices[0].set(p4xupdate, p4yupdate);
-
-
     }
 
 
