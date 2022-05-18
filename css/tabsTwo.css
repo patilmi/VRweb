@@ -63,6 +63,20 @@ list-style: none;
     border: .35vw solid black;
 }
 
+body::-webkit-scrollbar {
+    width: 1vw;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(52, 61, 53);
+    border-radius: .5vw;
+    border: .35vw solid black;
+}
+
 
 
 .box.active
@@ -111,8 +125,9 @@ list-style: none;
 	left:25px;
 	right:auto;
 	margin:0;
-  font-weight:600;
-  color: rgb(52, 61, 53);
+    font-weight:600;
+    color: rgb(52, 61, 53);
+
 }
 
 p 

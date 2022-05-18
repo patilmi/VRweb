@@ -13,17 +13,17 @@ img {
 }
 
 .schematic {
-    display: grid;
-    font-size: 1.5vw;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2vw;
-    text-align: justify;
+    
+    
+    font-size: 1.1vw;
+    text-align: center;
+    
+    
+
     /* background-color: rgb(236, 232, 213); */
 }
 
-#conceptual {
-    padding: 3vw;
-}
+
 
 #technical{
     padding: 3vw;
