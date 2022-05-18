@@ -13,18 +13,17 @@ img {
 }
 
 .schematic {
-    display: grid;
-    font-size: 1.5vw;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 2vw;
-    text-align: justify;
+    
+    
+    font-size: 1.1vw;
+    text-align: center;
+    
+    
+
     /* background-color: rgb(236, 232, 213); */
 }
 
-#conceptual {
-    padding: 3vw;
-}
+
 
 #technical{
     padding: 3vw;
@@ -32,10 +31,11 @@ img {
 
 .details {
     text-align: center;
+    background-color: black;
 }
 
 .details > embed {
-    height: 40vh;
+    height: 80vh;
     width: 80vw;
 }
 
@@ -55,3 +55,18 @@ img {
     font-size: 1.3vw;
     
 }
+
+#animations {
+    background-color: white;
+    height: 50vh;
+    display: grid;
+    font-size: 1.5vw;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vh 0vw;
+}
+
+#animation, #randomAnimation{
+    background-color: white;
+    color: black;
+}
+

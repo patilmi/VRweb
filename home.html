@@ -11,19 +11,26 @@
     <link rel="stylesheet" href="css/cover-page.css">
     <link rel="stylesheet" href="css/intro-page.css">
     <link rel="stylesheet" href="css/math.css">
+    <script src="js/projectionAnimation.js"></script>
+    <script src="js/randomAnimation.js"></script>
+    <script src="js/two.min.js"></script>
+    <script src="js/math.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <style>
 
-    </style>
+
 </head>
 
 
-<body>
+<body onload="init(); init2();">
     <div class="frontpageWrapper">
 
         <div class="top bar">
             <div class="panel">
-                <div>
+                
+            
+                <a href="html/glossary.html"><div>
+                    
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark"
                         viewBox="0 0 24 24">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -33,8 +40,10 @@
                     <div>
                         FAQ
                     </div>
-                </div>
-                <div>
+                
+                </div></a>
+            
+                <a href="https://github.com/patilmi/VR4D"><div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
                         viewBox="0 0 24 24">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -44,9 +53,9 @@
                     <div>
                         Code
                     </div>
-                </div>
+                </div></a>
 
-                <div>
+                <a href="https://www.youtube.com/watch?v=IGM0zfpOdsg&ab_channel=MihirPatil"><div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -58,8 +67,9 @@
                     <div>
                         Videos
                     </div>
-                </div>
-                <div>
+                </div></a>
+
+               <a href=""> <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mailbox"
                         viewBox="0 0 24 24">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -70,7 +80,8 @@
                     <div>
                         Contact
                     </div>
-                </div>
+                </div></a>
+
             </div>
         </div>
 
@@ -121,33 +132,69 @@
 
             <h2 id="schematic" style="padding: 3vw;">Schematic</h2>
             <div class="schematic">
-                <div id="conceptual">
-                    <p>Conceptual - Our technology studies the algorithm that our minds use to construct 3D
-                        vision/intuition
-                        from point light sensory input (add hover link explaining this phenomenon) from the retina,
-                        and then extends it to four dimensions (Link to neural net based explanation)
-                    </p>
-                </div>
                 <div id="technical">
-                    Technical - Construct virtual four dimensional shapes, rotate them virtually, render a 3D projection
-                    of
-                    them
-                    onto a 3D screen (VR goggles),
-                    view projection rendering to develop 4D intuition, manipulate the virtual 4D objects and rotations
-                    while
-                    viewing their projections to further
-                    facilitate intution. (Loss function Machine learning link).
+                    
+                    <ul>
+                        <li>Construct virtual four dimensional shapes</li>
+                        <li>Rotate them virtually</li>
+                        <li>Render a 3D projection onto a 3D screen (VR goggles)</li>
+                        <li>View projection rendering and interact with 4D object to develop 4D intuition</li>
+                    </ul>
                 </div>
             </div>
 
 
+            <h2> Cover one eye to cancel the stereoscopic effect </h2>
 
-            <h2 id="details">Detailed explanation</h2>
+            <div>
+                
+                
+                <p>Both animations are of straight lines drawn between animated vertices.</p>
+
+                
+
+                <p>One's vertices are moving in an arbitrary pattern, while the other's are moving based on
+                    a projection of a rotating sheet in 3D space.
+                </p>
+
+        
+
+                
+
+                <div id="animations">
+                    <div id="animation">
+                        Rotation projection
+        
+                    </div>
+        
+                    <div id="randomAnimation">
+                        Random warping
+                    </div>
+    
+                </div>
+
+                <p>Even when viewed with one eye the rotation animation is instantly recognizable as an object in 3D space</p>
+
+                <p> The "Rotation projection" animation is exactly what we're going to doing in this project, except that the points animated here
+                    are set in 3D space instead of 4D space, the rotations are 3D rotations instead of 4D rotations, and the screen is a 2D screen
+                    instead of a 3D screen or VR headset</p>
+
+            </div>
+            
+           
+            
+            
+
+
+
+
+
+            <h2 id="details">Step by step dimensional analogy</h2>
             <div class="details">
                 <p>
                     Natural process of learning 3D compared to our 4D learning technology
                 </p>
-                <embed type="text/html" src="html/tabsTwo.html" style="height: 80vh; width: 80vw">
+                <embed type="text/html" src="html/tabsTwo.html">
             </div>
 
 
@@ -157,7 +204,7 @@
 
                 <p>A conceptual analogy for the brain's vision algorithm</p>
 
-                <img src="NNanalogy.png" alt="Neural Net">
+                <img src="img/NNanalogy.png" alt="Neural Net">
 
                 <p>The above graphic is a simplified look at a tiny section of the brain's
                     function if it worked as a network of neural nets</p>
@@ -168,7 +215,7 @@
                     world. Things like successfully grabbing and recognizing a toy, manipulating objects, dodging a
                     swinging
                     branch,
-                    or climbing a tree reinforce the mechanism that generates 3D vision in our minds from the input it
+                    or climbing a tree, reinforce the mechanism that generates 3D vision in our minds from the input it
                     receives.
                 </p>
             </div>
@@ -182,11 +229,11 @@
                         <div class="col">
                             <p>
                                 To view an object from all angles, we employ continuous rotations,
-                                and marstering rotations in 4 dimensions is core to our technology.
+                                and mastering rotations in 4 dimensions is core to our technology.
                             </p>
                             <p>
                                 Rotations are continuous linear transformations that preserve shapes
-                                (preserving distances between points, or equivalantly,
+                                (preserving distances between points, or equivalently,
                                 preserving lengths of vectors in space).
                             </p>
                             <p>
@@ -212,7 +259,7 @@
                             </p>
                             <p>
                                 where <span class=math>m</span> is an infinitesimal matrix
-                                (measureing the departure of <span class=math>R</span> from the identitity
+                                (measuring the departure of <span class=math>R</span> from the identity
                                 matrix <span class=math>I</span>) constrained by
                             </p>
                             <p class=math>
@@ -232,7 +279,7 @@
 
                         <div class="col">
                             <p>
-                                Thus, an infinitesimal rotation matrix is a sum of the identitity matrix
+                                Thus, an infinitesimal rotation matrix is a sum of the identity matrix
                                 and an infinitesimal antisymmetric matrix.
                             </p>
                             <p>
@@ -267,7 +314,7 @@
                             </table>
                             </p>
                             <p>
-                                characterized by 6 independant, infinitesimal paramters (<span class=math>a...f</span>).
+                                characterized by 6 independent, infinitesimal parameters (<span class=math>a...f</span>).
                             </p>
                         </div>
                     </div>
@@ -278,7 +325,7 @@
             <div class="projectionMath">
                 <h3>Projection Math</h3>
 
-                <img src="projection.png" alt="Projection diagram">
+                <img src="img/projection.png" alt="Projection diagram">
 
                 <div class="projectionMathWritten">
 
@@ -303,12 +350,20 @@
             </div>
 
 
+
+
+    
+
+
         </div>
 
 
         <div class="bottom bar">
             <div class="panel">
-                <div>
+                
+            
+                <a href="html/glossary.html"><div>
+                    
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark"
                         viewBox="0 0 24 24">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -318,8 +373,10 @@
                     <div>
                         FAQ
                     </div>
-                </div>
-                <div>
+                
+                </div></a>
+            
+                <a href="https://github.com/patilmi/VR4D"><div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
                         viewBox="0 0 24 24">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -329,9 +386,9 @@
                     <div>
                         Code
                     </div>
-                </div>
+                </div></a>
 
-                <div>
+                <a href="https://www.youtube.com/watch?v=IGM0zfpOdsg&ab_channel=MihirPatil"><div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -343,8 +400,9 @@
                     <div>
                         Videos
                     </div>
-                </div>
-                <div>
+                </div></a>
+
+               <a href=""> <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mailbox"
                         viewBox="0 0 24 24">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -355,7 +413,8 @@
                     <div>
                         Contact
                     </div>
-                </div>
+                </div></a>
+
             </div>
         </div>
 
