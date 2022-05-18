@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    
+
     <link rel="stylesheet" href="css/home.css">
 
     <link rel="stylesheet" href="css/skeleton.css">
@@ -221,11 +221,10 @@
             </div>
 
 
-            <div id=rotation-math>
+            <div id=rotation-math class=centered>
                 <div class=raised-box>
                     <h2>Rotations</h2>
                     <div class="row">
-
                         <div class="col">
                             <p>
                                 To view an object from all angles, we employ continuous rotations,
@@ -321,40 +320,53 @@
                 </div>
             </div>
 
-
-            <div class="projectionMath">
-                <h3>Projection Math</h3>
-
-                <img src="img/projection.png" alt="Projection diagram">
-
-                <div class="projectionMathWritten">
-
-                    <div class="primaries">
-                        <p>p = 4D point vector</p>
-                        <p>&#x0175; = (0, 0, 0, 1)</p>
-                        <p>eye placed at &#x0175;</p>
-                        <p>&pi;(p) = Projection of 4D point onto screen</p>
-                        <p>r' = short axis of projected ball</p>
-                        <p>r" = long axis of projected ball</p>
-
+            <div class=centered>
+                <div class=raised-box>
+                    <h2>Perspective Projection</h2>
+                    <div class=row>
+                        <div class=col style="flex: 2;">
+                            <p>
+                                The 4D space (<span class=math>xyzw</span>) is projected onto a 3D screen (the <span class=math>xyz</span>
+                                hyperplane)
+                                from the perspective of an eye placed at <span class=math>&#x0175;</span>
+                                (the unit vector in <span class=math>w</span> direction)
+                            </p>
+                            <img src="images/projection.png" alt="Projection diagram">
+                        </div>
+                        <div class="col" style="flex: 1">
+                            <p>
+                                The point at <span class=math>p</span> projects onto <span class=math>&pi;(p)</span>.
+                            </p>
+                            <div class=math>
+                                &pi;(p) = <div class=frac>
+                                    p - p&sdot;&#x0175; &#x0175;
+                                    <hr />
+                                    1 - p&sdot;&#x0175;
+                                </div>
+                            </div>
+                            <p>
+                                A tiny sphere of radius <span class=math>r</span> placed at
+                                <span class=math>p</span> will project to an ellipsoid with its largest radius
+                                <span class=math>r<sub>+</sub></span> parallel to <span class=math>&pi;(p)</span>
+                                and the smallest radius <span class=math>r<sub>o</sub></span> perpendicular to
+                                <span class=math>p</span>.
+                            </p>
+                            <br/>
+                            <div class=math>
+                                r<sub>o</sub> = <div class=frac>
+                                    1
+                                    <hr />
+                                    1 - p&sdot;&#x0175;
+                                </div> r
+                                <br/>
+                                <br/>
+                                r<sub>+</sub> = <span style="font-size: 1.55em;">&radic;</span><span class=sqrt>1 + &pi;(p)<sup>2</sup></span>
+                                r<sub>o</sub>
+                            </div>
+                        </div>
                     </div>
-
-                    <ol>
-
-                        <li>&pi;(p) = (p - (p dot &#x0175;)) / (1 - (p dot &#x0175;))</li>
-                        <li>r' = ( 1 / (1 - (p dot w))) r</li>
-                        <li>r" = ( &#8730; (1 + &pi;<sup>2</sup>(p))) r'</li>
-
-                    </ol>
                 </div>
             </div>
-
-
-
-
-    
-
-
         </div>
 
 

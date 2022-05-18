@@ -4,14 +4,6 @@
     /* background-color: rgb(245, 242, 214); */
 }
 
-img {
-    max-width: 80%;
-    max-height: 80%;
-    padding: 4em;
-    border: solid black 0.15em;
-    box-shadow: 0.2em 0.2em 0.3em grey;
-}
-
 .schematic {
     
     
