@@ -1,20 +1,41 @@
 
+
+.demo > p{
+    font-weight: bold;
+    font-size: larger;
+}
+
+
 .NN {
     text-align: center;
     /* background-color: rgb(245, 242, 214); */
 }
 
+.NN > img {
+    max-width: 90%;
+    max-height: 100%;
+    padding: 4vh 4vw;
+}
+
+.NN > p {
+    padding: 0vh 4vw;
+}
+
+
+
 .schematic {
-    
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     text-align: center;
-    
     /* background-color: rgb(236, 232, 213); */
 }
 
 
-#technical{
-    padding: 3vw;
+#technical {
+    padding-bottom: 2vh;
+}
+
+#technical > p{
+    padding: 1vh 2vw;
 }
 
 .details {
