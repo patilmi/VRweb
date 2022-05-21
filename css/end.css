@@ -2,11 +2,11 @@
     text-align: justify;
     background-color: black;
     color: lightgray;
-    text-shadow: 0 0 .2em lightgray;
+    line-height: 1.5em;
 }
 
 .end strong {
     font-size: larger;
     color: white;
-    text-shadow: 0 0 .2em white;
+    text-shadow: 0 0 .1em;
 }

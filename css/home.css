@@ -1,10 +1,16 @@
 
-
-.demo > p{
+.demo > p {
     font-weight: bold;
-    font-size: larger;
+    /* font-size: larger; */
 }
 
+.demo .col {
+    padding: 1em 3em;
+}
+
+.demo p {
+    text-align: justify;
+}
 
 .NN {
     text-align: center;
@@ -21,14 +27,12 @@
     padding: 0vh 4vw;
 }
 
-
-
 .schematic {
-    font-size: 1.2vw;
+    /* font-size: larger; */
+    font-weight: bold;
     text-align: center;
-    /* background-color: rgb(236, 232, 213); */
+    background-color: lightgray;
 }
-
 
 #technical {
     padding-bottom: 2vh;
@@ -41,33 +45,21 @@
 .details {
     text-align: center;
     background-color: black;
+    color: lightgray;
+}
+
+.details .row .col p {
+    text-align: justify;
 }
 
 .details > embed {
-    height: 80vh;
-    width: 80vw;
-}
-
-.primaries {
-    display: grid;
-    font-size: 1.1vw;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 0;
-
-}
-
-.projectionMathWritten {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1vw;
-    font-size: 1.3vw;
+    height: 50vw;
+    width: 95vw;
 }
 
 #animations {
     background-color: white;
     font-size: 1.5vw;
-    padding: 5vh 0vw;
     /* border: thin solid blue; */
 }
 
@@ -75,8 +67,8 @@
     background-color: white;
     color: black;
     /* border: thin solid rgb(27, 27, 27); */
-    height: 30vw;
-    padding: 1em;
+    height: 20vw;
+    padding: 0 1em;
 }
 
 
