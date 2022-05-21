@@ -16,7 +16,7 @@ function initR() {
     function resize(port) {
         bodyWidth = port.width;
         bodyHeight = port.height;
-        ptScale = ((bodyWidth + bodyHeight) / 2) * 1.5;
+        ptScale = bodyWidth + bodyHeight;
     }
 
     function build(two, port) {
