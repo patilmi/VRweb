@@ -5,9 +5,7 @@
     /* border: thin solid orange; */
  }
 
- .bar.top {
-     height: 30vmin;
- }
+
 
 .bar .panel {
     position: sticky;
@@ -16,14 +14,27 @@
 
 }
 
+.bar.top {
+    height: 30vmin;
+}
+
 .bar.top .panel {
     top: 0;
 }
 
-.bar.bottom .panel {
-    bottom: 0;
+.bar.bottom {
+    /* height: 30vmin; */
+    /* border: thin solid greenyellow; */
+    vertical-align: text-bottom;
 }
 
+.bar.bottom .panel {
+    bottom: 0;
+    vertical-align: text-bottom;
+    bottom: 0;
+    /* border: thin solid yellow; */
+    background-color: black;
+}
 
 .bar .panel > a > div, .bar .panel > div {
     margin: 1vmin 5vw;
