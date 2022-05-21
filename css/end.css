@@ -1,0 +1,12 @@
+.end {
+    text-align: justify;
+    background-color: black;
+    color: lightgray;
+    text-shadow: 0 0 .2em lightgray;
+}
+
+.end strong {
+    font-size: larger;
+    color: white;
+    text-shadow: 0 0 .2em white;
+}
