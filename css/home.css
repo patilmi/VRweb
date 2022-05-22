@@ -18,13 +18,11 @@
 }
 
 .NN > img {
-    max-width: 90%;
-    max-height: 100%;
-    padding: 4vh 4vw;
+    border: thin solid red;
 }
 
-.NN > p {
-    padding: 0vh 4vw;
+.NN .col {
+    text-align: justify;
 }
 
 .schematic {
@@ -32,6 +30,11 @@
     font-weight: bold;
     text-align: center;
     background-color: lightgray;
+}
+
+.schematic .arrow {
+    font-size: larger;
+    font-weight: bold;
 }
 
 #technical {
