@@ -9,7 +9,6 @@ body {
     padding: 0;
 }
 
-
 .row {
     display: flex;
 }
@@ -51,7 +50,7 @@ body {
 .frontpage > div {
     min-height: 75%;
     max-height: 100%;
-    padding: 1em 3em;
+    padding: 3em 3em;
 }
 
 .frontpage * {

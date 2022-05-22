@@ -2,12 +2,12 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background: #000000;
+    background: #111;
 }
 
 .main-box {
     display: flex;
-    background: #000;
+    /* background: #000; */
     margin: 2em auto 2em auto;
     padding:0;
     width: 90vw;
@@ -27,15 +27,15 @@ body {
 }
 
 .detail {
-    width: 85%;
+    width: 90%;
     height: 100%;
     position: absolute;
     right: 0;
     top:0;
-    background: rgb(0, 0, 0);
+    /* background: rgb(0, 0, 0); */
     color:rgb(122, 184, 82);
     opacity: 0;
-    padding:3em;
+    padding: 0 1em;
     box-sizing:border-box;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -49,7 +49,7 @@ body {
 }
 
 .detail::-webkit-scrollbar-track {
-    background: black;
+    /* background: black; */
 }
 
 .detail::-webkit-scrollbar-thumb {
@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: black;
+    /* background: black; */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -106,8 +106,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .box.active span {
-	left:3em;
-	right:auto;
+	/* left:3em; */
+	/* right:auto; */
 	margin:0;
     font-weight:600;
     color:rgb(122, 184, 82);

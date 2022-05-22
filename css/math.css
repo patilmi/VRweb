@@ -25,7 +25,6 @@ table.matrix tr td {
     padding: .3em .3em;
 }
 
-
 .raised-box img {
     padding: 0;
     margin: 0;
@@ -33,6 +32,9 @@ table.matrix tr td {
     box-shadow: none;
 }
 
+.raised-box h3 {
+    padding: 2em 0 0 0;
+}
 
 .frac {
     display: inline-block;
