@@ -1,0 +1,32 @@
+
+.schema {
+    vertical-align: middle;
+    background-color: lightgray;
+    /* padding: 2em; */
+    color: #421;
+}
+
+.schema > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 12vw;
+    text-align: center;
+    margin: 1em;
+    /* border: thin solid gray; */
+    font-size: larger;
+    font-weight: bold;
+}
+
+.schema > div > img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 6vw;
+    border: .3vw solid #421;
+    text-align: center;
+}
+
+.schema > div > h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: .6em 0 0 0;
+}
