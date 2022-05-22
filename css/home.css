@@ -47,7 +47,7 @@
 
 .details {
     text-align: center;
-    background-color: black;
+    background-color: #111;
     color: lightgray;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .details > embed {
-    height: 50vw;
+    height: 65vw;
     width: 95vw;
 }
 
