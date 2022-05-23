@@ -20,6 +20,7 @@
     <script src="js/projectionAnimation.js"></script>
     <script src="js/randomAnimation.js"></script>
     <script src="js/twoAnimation.js"></script>
+    <script src="js/animationUtil.js"></script>
 
     <script>
         function initDelayed() {
@@ -221,26 +222,32 @@
 
                 <div class="row">
                     <div class="col">
-                        <h3>
-                            Cover one eye to prevent the stereoscopic effect
-                        </h3>
                         <p>
-                            Both animations are of straight lines drawn between animated vertices.
+                            Both animations are made of straight lines drawn between animated vertices.
                             One's vertices are moving in an arbitrary pattern, while the other's are moving based on
                             a projection of a rotating sheet in 3D space.
                         </p>
                         <p>
-                            The quadrilaterals in both animations have their sides continuously changing lengths.
+                            The quadrilaterals in both animations have their sides 
+                            <strong>continuously changing lengths</strong>.
+                        </p>
+                    </div>
+                    <div class=col>
+                        <p>
+                            <strong>Cover one eye</strong> to prevent the stereoscopic effect.
+                        </p>
+                        <p>
+                            Even when viewed with one eye, the rotation projection animation
+                            is instantly recognizable as an object in 3D space.
+                            The shape <em>appears</em> rigid, for which the brain had to 
+                            <br/><strong>invent a 3D space</strong>.
+                        </p>
                     </div>
                     <div class="col">
                         <p>
-                            <strong>Even when viewed with one eye</strong>, the rotation projection animation
-                            is instantly recognizable as an object in 3D space.  
-                            The shape <em>appears</em> rigid, for which the brain had to <em>invent</em> a 3D space. 
-                        </p>
-                        <p>
-                            The "Rotation projection" animation is exactly what we are doing in this project,
-                            except that the points animated in this demo set in 3D space instead of 4D space,
+                            The <strong>Rotation + Projection</strong> animation <br/> 
+                            is exactly what we are doing in this project,
+                            except that the points animated in this demo are set in 3D space instead of 4D space,
                             the rotations are 3D rotations instead of 4D rotations, and the screen is a 
                             2D screen instead of a 3D screen or VR headset.
                         </p>

@@ -1,81 +1,44 @@
 
 function initA() {
 
-    var span = 0.1;
-    var longSideScale = 1.3;
-    var lineWidth = 4;
-    var color = 'black';
+    var rect, port, ptScale;
 
-    var point1, point2, point3, point4;
-    var line1, line2, line3, line4;
-
-    function build(two, port) {
-
-        point1 = [-span * longSideScale, span, 0];
-        point2 = [span * longSideScale, span, 0];
-        point3 = [span * longSideScale, -span, 0];
-        point4 = [-span * longSideScale, -span, 0];
-
-        line1 = new Two.Line(point1[0], point1[1], point2[0], point2[1]);
-        line2 = two.makeLine(point2[0], point2[1], point3[0], point3[1]);
-        line3 = two.makeLine(point3[0], point3[1], point4[0], point4[1]);
-        line4 = two.makeLine(point4[0], point4[1], point1[0], point1[1]);
-
-        line1.linewidth = lineWidth;
-        line2.linewidth = lineWidth;
-        line3.linewidth = lineWidth;
-        line4.linewidth = lineWidth;
-
-
-        line1.stroke = color;
-        line2.stroke = color;
-        line3.stroke = color;
-        line4.stroke = color;
-
-        two.add(line1);
-        two.add(line2);
-        two.add(line3);
-        two.add(line4);
+    function build(two) {
+        rect = Anim.build(two)
     }
 
-    var bodyWidth, bodyHeight, ptScale;
-
-    function resize(port) {
-        bodyWidth = port.width;
-        bodyHeight = port.height;
-        ptScale = ((bodyWidth + bodyHeight) / 2) * 1.5;
-    }
-
-    function projectPoint(v) {
-        var zHat = [0, 0, 1];
-        var vDotZ = math.dot(v, zHat);
-        return math.multiply(1 / (1 - vDotZ), math.subtract(v, math.multiply(vDotZ, zHat)))._data;
-    }
-
-    function shiftPointToCenter(p) {
-
-        var xShift = (bodyWidth / 2) / ptScale;
-        var yShift = (bodyHeight / 2) / ptScale;
-        var shifted = [p[0] + xShift, p[1] + yShift, p[2]];
-        return shifted;
+    function resize(viewPort) {
+        port = viewPort;
+        ptScale = 2.2 * Math.min(port.width, port.height);
     }
 
     function update(frameCount) {
-
+        const frequencyFactor = 0.05;
 
         //make it time based
-        var factor = 0.00001;
-        var frequencyFactor = 0.07;
+        var dt = frameCount * frequencyFactor
 
-        var sinFrameCount = Math.sin(frameCount * frequencyFactor);
-        var cosFrameCount = Math.cos(frameCount * frequencyFactor);
+        var rotationMatrix = getRotationMatrix(dt);
+        rect.points = rect.points.map(p => math.multiply(rotationMatrix, p)._data)
+        var piPoints = rect.points.map(p => projectPoint(p, ptScale))
+        
+        Anim.update(rect, piPoints, port)
+    }
 
-        var angularRotationSpeed = 0;
+    animateTwo('#animation', build, update, resize)
 
+    function projectPoint(v, scale) {
+        var s = scale / (1 - v[2])
+        return [v[0] * s, v[1] * s]
+    }
 
-        var alpha = angularRotationSpeed + 0 * Math.sin(frameCount * frequencyFactor);
-        var beta = angularRotationSpeed + 20 * Math.pow(cosFrameCount, 1);
-        var gamma = angularRotationSpeed + 20 * Math.pow(sinFrameCount, 1);
+    function getRotationMatrix(dt) {
+
+        const factor = 0.0007;
+        
+        var alpha = 0.2,
+            beta = Math.sin(dt),
+            gamma = Math.cos(dt);
 
         var xy = alpha * factor;
         var xz = beta * factor;
@@ -87,28 +50,10 @@ function initA() {
 
         var rotationMatrix = math.matrix([rotationRow1, rotationRow2, rotationRow3]);
 
-        for (i = 0; i < 100; i++) {
-            point1 = math.multiply(rotationMatrix, point1);
-            point2 = math.multiply(rotationMatrix, point2);
-            point3 = math.multiply(rotationMatrix, point3);
-            point4 = math.multiply(rotationMatrix, point4);
+        for (var power = 0; power < 5; power++) {
+            rotationMatrix = math.multiply(rotationMatrix, rotationMatrix);
         }
 
-
-        var piPoint1 = shiftPointToCenter(projectPoint(point1));
-        var piPoint2 = shiftPointToCenter(projectPoint(point2));
-        var piPoint3 = shiftPointToCenter(projectPoint(point3));
-        var piPoint4 = shiftPointToCenter(projectPoint(point4));
-
-        line1.vertices[0].set(piPoint1[0] * ptScale, piPoint1[1] * ptScale);
-        line1.vertices[1].set(piPoint2[0] * ptScale, piPoint2[1] * ptScale);
-        line2.vertices[0].set(piPoint2[0] * ptScale, piPoint2[1] * ptScale);
-        line2.vertices[1].set(piPoint3[0] * ptScale, piPoint3[1] * ptScale);
-        line3.vertices[0].set(piPoint3[0] * ptScale, piPoint3[1] * ptScale);
-        line3.vertices[1].set(piPoint4[0] * ptScale, piPoint4[1] * ptScale);
-        line4.vertices[0].set(piPoint4[0] * ptScale, piPoint4[1] * ptScale);
-        line4.vertices[1].set(piPoint1[0] * ptScale, piPoint1[1] * ptScale);
+        return rotationMatrix;
     }
-
-    animateTwo('#animation', build, update, resize)
 }
