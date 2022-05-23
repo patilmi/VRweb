@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/contact.css">
+    <script src="../js/contact.js"></script>
 
 </head>
 
@@ -17,14 +18,15 @@
     send us a message through the form below. 
 </p>
 
-<p>Email: (email)</p>
+<p>Email:</p>
 
 
-<form>
+<form action="../js/contact.js" method="POST" onsubmit="return false">
 
-    <textarea name="" id="textbox" cols="30" rows="10"></textarea>
+    <textarea name="message" id="textbox" cols="30" rows="10"></textarea>
 
-    <input type="submit" value="Submit" >
+    <input type="submit" onclick="handleFeedback();">
+
 
 
 </form>
