@@ -20,11 +20,13 @@
         </li>
         <li class="box"><span>Rotation</span>
             <div class="detail">
-                <p> Rotation of a 3D object/viewing 3D objects from different perspectives.
+                <p> Rotation of a 3D object or viewing 3D objects from different perspectives.
                     For example a baby's crib mobile spinning as the baby watches.
 
-                    Rotations in 3D space have 3 degrees of freedom - around the xy, xz, and yz planes, using cartesian
-                    coordinates.</p>
+                    </p>
+
+                    <p>Rotations in 3D space have 3 degrees of freedom - around the xy, xz, and yz planes.
+                    </p>
             </div>
         </li>
         <li class="box"><span>Projection</span>
@@ -49,20 +51,20 @@
 
         <li class="box"><span>Vision</span>
             <div class="detail">
-                <p> What does it mean to "see" 3D? We can navigate 3D space, which means we see 3D space as continious,
-                    can tell which points are close
-                    together and which are far apart, which points are which direction from each other, etc. The
+                <p> What does it mean to "see" 3D? We can navigate 3D space, which means we see 3D space as continuous,
+                    can tell which points are close to one another and which are far apart,
+                    which points are which direction from each other, etc. The
                     combination of distance and direction
                     lets us navigate 3D space.
+                </p>
 
-                    </p>
-
-                    <p>This intuition of 3D space is what drives the learning algorithm that takes us from point light
-                        sensors in our retina (rods and cones),
+                <p>This learning algorithm takes us from point light
+                        sensors in our retina (rods and cones), to two dimensional vision,
                         to seeing and imagining full continous 3D space and being able to intuitively navigate it. In the
                         baby's example this developing intuition
                         allows it to recognize its toy from various perspectives, manipulate its toy, and successfully place
-                        its toy in its mouth.</p>
+                        its toy in its mouth.
+                </p>
 
             </div>
         </li>
@@ -75,10 +77,14 @@
 
             <div class="detail active">
                 <p> A virtual 4D object. It defeats the purpose of this project to try and speculate the structure of a 4D object.
-                    Objects are represented by point clouds embedded in 4D space, locations in 4D space are represented by (x, y, z, w) point vectors.
-                    Points in turn are represented by tiny 4D spheres.
+
+                    
                     
                 </p>
+
+                <p> In our program objects/shapes are represented by point clouds embedded in 4D space.
+                    A point's location in 4D space is represented by a point vector (x, y, z, w).
+                    Points in turn are represented by tiny 4D spheres.</p>
 
                 <p>
                     Shapes can be defined by certain properties regardless of dimension. For example A 4D sphere can be defined by a center and a radius
@@ -88,23 +94,24 @@
         </li>
         <li class="box"><span>Rotation</span>
             <div class="detail">
-                <p> Rotate virtual shapes in 4D space.  Practically a point sphere is represented by a 4 dimensional
-                    position vector v like (x, y, z, w)
-                    and a radius r. Applying rotations to each point sphere rotates the whole shape.</p>
+                <p> Since our 4D shapes are built as a collection of point spheres. Applying rotations to each point sphere rotates the whole shape.
+                </p>
 
                 <p>
-                    To rotate objects in 4D space we needed a generic and intuitive representation for rotations which
-                    we constructed here(link to math).
-                    Rotations in 4 dimensional space have 6 degrees of freedom. Around the XY, XZ, XW, YZ, YW, and ZW
-                    planes.
+                    To rotate objects in 4D space we need a generic and intuitive representation for rotations which
+                    we constructed as shown in the essential math section below.
+                    
                 </p>
+
+                <p>Rotations in 4 dimensional space have 6 degrees of freedom. Around the xy, xz, xw, yz, yw, and zw
+                    planes.</p>
             </div>
         </li>
         <li class="box"><span>Projection</span>
 
             <div class="detail">
                 <p> 
-                    A perspective projection onto a 3D screen. (projection diagram)
+                    A perspective projection onto a 3D screen. Described in detail in the math section.
                 </p>
             </div>
         </li>
@@ -125,9 +132,9 @@
                 <p> Learning the 4D object through rotation gives us insights into 4D space so that we begin to intuit and 'see' 4D.</p>
 
                 <p>What does it mean to "see" 4D?  Recognizing 4D space as continuous space,
-                    the ability to determine which points are close
-                    together and which are far apart, the ability to determine which points are which direction from one another,
-                    and finally navigating 4D space, all combine to let us see 4D objects and 4D space when presented with it.</p>
+                    the ability to determine which points are close to one another,
+                    and which are far apart, the ability to determine which points are which direction from one another,
+                    and the resulting ability to navigate 4D space, all combine to let us see 4D objects in 4D space.</p>
             </div>
         </li>
     </ul>

@@ -18,7 +18,8 @@ body {
 .box {
     height: 20vw;
     padding: 1em;
-    border-right: thin solid  rgb(52, 61, 53);
+    border-right: thin solid  rgb(225, 226, 210);
+    border-right: thin solid  #111;
     -o-transition: 0.6s;
     transition: 0.6s;
     position: relative;
@@ -33,7 +34,7 @@ body {
     right: 0;
     top:0;
     /* background: rgb(0, 0, 0); */
-    color:rgb(122, 184, 82);
+    color:rgb(158, 218, 118);
     opacity: 0;
     padding: 0 1em;
     box-sizing:border-box;
@@ -74,6 +75,7 @@ body::-webkit-scrollbar-thumb {
 
 .box.active {
     width: 70% !important;
+    border-right: thin solid #111;
 }
 
 .box.active .detail {
@@ -92,7 +94,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(52, 61, 53);
     text-transform: uppercase;
     letter-spacing: .3em;
     width: 3em;
@@ -103,14 +104,17 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     right: 0;
     margin: 0 auto;
+    color:rgb(142, 201, 102);
 }
 
 .box.active span {
 	/* left:3em; */
 	/* right:auto; */
 	margin:0;
-    font-weight:600;
-    color:rgb(122, 184, 82);
+    font-weight:500;
+    
+    color: rgb(67, 68, 64);
+    color: rgb(225, 226, 210);
     text-shadow: 0 0 0.1em;
 }
 
