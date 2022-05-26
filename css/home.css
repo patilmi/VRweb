@@ -51,10 +51,6 @@
     color: lightgray;
 }
 
-.details .row .col p {
-    text-align: justify;
-}
-
 .details > embed {
     height: 65vw;
     width: 95vw;
