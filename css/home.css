@@ -51,6 +51,12 @@
     color: lightgray;
 }
 
+.details .row .col p {
+    text-align: justify;
+}
+
+
+
 .details > embed {
     height: 65vw;
     width: 95vw;
@@ -68,6 +74,10 @@
     /* border: thin solid rgb(27, 27, 27); */
     height: 20vw;
     padding: 0 1em;
+}
+
+.nutshell > h4 {
+    padding: 0vh 20vw;
 }
 
 
