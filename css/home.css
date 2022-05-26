@@ -17,8 +17,9 @@
     /* background-color: rgb(245, 242, 214); */
 }
 
-.NN > img {
+.NN img {
     border: thin solid red;
+    max-width: 70%;
 }
 
 .NN .col {

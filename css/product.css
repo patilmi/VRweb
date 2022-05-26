@@ -1,0 +1,14 @@
+
+.product {
+    background-color: lightgray;
+}
+
+.product .summary {
+    /* border: thin solid blue; */
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.product .form {
+    text-align: left;
+}
