@@ -35,7 +35,7 @@ body {
     right: 0;
     top:0;
     /* background: rgb(0, 0, 0); */
-    color:rgb(158, 218, 118);
+    color: rgb(225, 226, 210);
     opacity: 0;
     padding: 0 1em;
     box-sizing:border-box;
@@ -114,6 +114,7 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     margin: 0 auto;
     color:rgb(142, 201, 102);
+    color: rgb(231, 170, 90);
 }
 
 .box.active span {
