@@ -25,6 +25,7 @@ body {
     position: relative;
     overflow: hidden;
     list-style: none;
+    
 }
 
 .detail {
@@ -43,7 +44,15 @@ body {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
 }
+
+
+
+
 
 .detail::-webkit-scrollbar {
     width: 1vw;
@@ -120,4 +129,11 @@ body::-webkit-scrollbar-thumb {
 
 p {
 	line-height: 1.5em;
+}
+
+.tabIntro {
+    text-align: center;
+    color: rgb(225, 226, 210);
+    padding: 0vh 4vw 5vh 4vw;
+
 }
