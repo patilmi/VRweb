@@ -9,7 +9,7 @@ function initA() {
 
     function resize(viewPort) {
         port = viewPort;
-        ptScale = 2.2 * Math.min(port.width, port.height);
+        ptScale = 2.1 * Math.min(port.width, port.height);
     }
 
     function update(frameCount) {
@@ -34,7 +34,7 @@ function initA() {
 
     function getRotationMatrix(dt) {
 
-        const factor = 0.0007;
+        const factor = 0.0001;
         
         var alpha = 0.2,
             beta = Math.sin(dt),
@@ -50,10 +50,13 @@ function initA() {
 
         var rotationMatrix = math.matrix([rotationRow1, rotationRow2, rotationRow3]);
 
-        for (var power = 0; power < 5; power++) {
-            rotationMatrix = math.multiply(rotationMatrix, rotationMatrix);
-        }
+        return raiseToBinaryPower(rotationMatrix, 8)
+    }
 
-        return rotationMatrix;
+    function raiseToBinaryPower(matrix, power) {
+        while (power-- > 0) {
+            matrix = math.multiply(matrix, matrix);
+        }
+        return matrix;
     }
 }
