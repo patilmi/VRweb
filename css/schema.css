@@ -6,8 +6,18 @@
     color: #421;
 }
 
-.schema {
-    /* font-size: larger; */
+.schema a:hover {
+    text-shadow: 0 0 .1em;
+}
+
+.schema svg {
+    width: 2em;
+    vertical-align: middle;
+    color: black;
+}
+
+.schema svg:hover {
+    font-weight: bold;
 }
 
 .schema  .stages > div {
