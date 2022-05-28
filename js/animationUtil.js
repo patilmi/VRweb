@@ -4,7 +4,7 @@ var Anim = (function () {
         unitSquare = [[-1, 1], [1, 1], [1, -1], [-1, -1]],
         length = 0.1,
         breadth = 0.135,
-        lineWidth = 4,
+        lineWidth = 5,
         color = 'black';
 
     function buildRect(two) {
@@ -17,6 +17,7 @@ var Anim = (function () {
             var line = two.makeLine(0, 0, 0, 0)
             line.linewidth = lineWidth
             line.stroke = color
+            line.cap = "round"
             return line
         })
 
