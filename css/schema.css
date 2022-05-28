@@ -6,14 +6,27 @@
     color: #421;
 }
 
+.schema a {
+    color: #b26;
+}
+
 .schema a:hover {
-    text-shadow: 0 0 .1em;
+    color: #f0c;
 }
 
 .schema svg {
-    width: 2em;
+    font-size: 1.5em;
+    width: 1em;
+    height: 1em;
     vertical-align: middle;
-    color: black;
+    fill: none;
+    stroke:  #b26;
+    stroke-width: 1.5;
+}
+
+.schema a:hover svg {
+    stroke-width: 1.7;
+    stroke: #f0c;
 }
 
 .schema svg:hover {

@@ -41,8 +41,8 @@
 }
 
 .bar .panel svg {
-    width: 5vmin;
-    height: 5vmin;
+    width: 4vmin;
+    height: 4vmin;
     stroke-width: 1;
     stroke: gray;
     stroke-linecap: round;

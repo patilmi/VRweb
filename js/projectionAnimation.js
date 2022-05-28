@@ -9,7 +9,7 @@ function initA() {
 
     function resize(viewPort) {
         port = viewPort;
-        ptScale = 2.1 * Math.min(port.width, port.height);
+        ptScale = 2.5 * Math.min(port.width, port.height);
     }
 
     function update(frameCount) {
