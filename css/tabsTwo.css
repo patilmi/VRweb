@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
-body {
+.details {
 	font-family:  'Montserrat', "Lucida Console", sans-serif;
     background: #111;
 }
@@ -113,7 +113,6 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     right: 0;
     margin: 0 auto;
-    color:rgb(142, 201, 102);
     color: rgb(231, 170, 90);
 }
 
@@ -137,4 +136,15 @@ p {
     color: rgb(225, 226, 210);
     padding: 0vh 4vw 5vh 4vw;
 
+}
+
+.details a:link, .details a:visited{
+    text-decoration: none;
+    color: rgb(231, 170, 90);
+
+}
+
+.details a:link:active, .details a:visited:active {
+    text-decoration: none;
+    color: rgb(231, 170, 90);
 }

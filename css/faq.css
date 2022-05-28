@@ -7,7 +7,7 @@ body {
     background-color: #f8f7f0;
 }
 
-ol,li {
+ol > li {
     padding: 5vh 5vw 5vh 5vw;
     font-weight: bold;
 }
@@ -19,6 +19,27 @@ h1 {
 p {
     font-weight: lighter;
 }
+
+#assumptions {
+    padding: 8vw 4vh 8vw 5vh;
+    
+}
+
+#assumptions > p {
+    padding: 1vh 50vw 1vh 0vw;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: #1b1a1a;
+
+}
+
+a:link:active, a:visited:active {
+    text-decoration: none;
+    color: #1b1a1a;
+}
+
 
 
 
