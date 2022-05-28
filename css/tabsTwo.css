@@ -25,7 +25,6 @@
     position: relative;
     overflow: hidden;
     list-style: none;
-    
 }
 
 .detail {
@@ -50,10 +49,6 @@
     flex-direction: column;
 }
 
-
-
-
-
 .detail::-webkit-scrollbar {
     width: 1vw;
 }
@@ -63,20 +58,6 @@
 }
 
 .detail::-webkit-scrollbar-thumb {
-    background-color: rgb(52, 61, 53);
-    border-radius: .5vw;
-    border: .35vw solid black;
-}
-
-body::-webkit-scrollbar {
-    width: 1vw;
-}
-
-body::-webkit-scrollbar-track {
-    /* background: black; */
-}
-
-body::-webkit-scrollbar-thumb {
     background-color: rgb(52, 61, 53);
     border-radius: .5vw;
     border: .35vw solid black;
@@ -135,13 +116,11 @@ p {
     text-align: center;
     color: rgb(225, 226, 210);
     padding: 0vh 4vw 5vh 4vw;
-
 }
 
 .details a:link, .details a:visited{
     text-decoration: none;
     color: rgb(231, 170, 90);
-
 }
 
 .details a:link:active, .details a:visited:active {
