@@ -9,7 +9,7 @@ function initR() {
 
     function resize(viewPort) {
         port = viewPort;
-        ptScale = 2 * Math.min(port.width, port.height);
+        ptScale = 2.4 * Math.min(port.width, port.height);
     }
 
     function build(two) {

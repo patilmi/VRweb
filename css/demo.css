@@ -1,0 +1,40 @@
+
+.demo > p {
+    font-weight: bold;
+    /* font-size: larger; */
+}
+
+.demo .col {
+    padding: 1em 3em;
+}
+
+.demo p {
+    text-align: center;
+}
+
+.demo h3 {
+    text-align: center;
+}
+
+#animations {
+    background-color: white;
+    font-size: 1.5vw;
+    /* border: thin solid blue; */
+    text-align: center;
+}
+
+#animations .col {
+    /* border: thin solid brown; */
+    padding: 0;
+    text-align: center;
+}
+
+#animation, #randomAnimation{
+    background-color: white;
+    /* color: black; */
+    /* border: thin solid green; */
+    height: 20vw;
+    width: 42vw;
+    padding: 0 1em;
+    text-align: center;
+}
