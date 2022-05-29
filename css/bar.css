@@ -3,11 +3,11 @@
     color: gray;
     /* border: thin solid orange; */
     font-family:  'Montserrat', "Lucida Console", sans-serif;
- }
+}
 
 .bar .panel {
     position: sticky;
-    width: 100%;
+    /* width: 100%; */
     /* border: thin solid yellow; */
     box-shadow: 0 0 0.5em black, 0 0 1em black, 0 0 2em black, 0 0 4em black;
     background-color: black;
@@ -44,7 +44,15 @@
     stroke-linejoin: round;
 }
 
- a:link, a:visited{
+.bar .panel.row {
+    padding: 0;
+}
+
+.bar .panel .col {
+    padding: 0;
+}
+
+a:link, a:visited{
     text-decoration: none;
     color: gray;
 
@@ -55,7 +63,6 @@ a:link:active, a:visited:active {
     color: gray;
 }
 
-
 .bar .panel > a:hover svg {
     stroke: white;
     text-shadow: 0 0 .1em white;
@@ -64,4 +71,3 @@ a:link:active, a:visited:active {
 .bar .panel > a:hover > div {
     color: white;
 }
-
