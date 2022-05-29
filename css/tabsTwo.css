@@ -18,6 +18,7 @@
     padding:0;
     width: 90vw;
     /* border: thin solid red; */
+    text-align: center;
 }
 
 .box {
@@ -62,7 +63,7 @@
 }
 
 .box.active {
-    width: 70% !important;
+    width: 85% !important;
     border-right: thin solid #111;
 }
 
