@@ -6,13 +6,15 @@
     text-align: center;
     /* border: thin solid red; */
     color:#e30;
+    color: rgb(37, 219, 149);
 }
 
 #cover-page img {
     padding: 0;
     margin: 0;
     /* border: thin solid white; */
-    height: 30vh;
+    max-height: 60vh;
+    max-width: 100vw;
     box-shadow: none;
 }
 
@@ -21,7 +23,7 @@
     text-shadow: 0 0 .2em;
     height: 30vh;
     /* border: thin solid yellow; */
-    padding: 10vh 0 0 0;
+    padding: 7vh 0 0 0;
 }
 
 #cover-page .title .sub {
