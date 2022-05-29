@@ -44,7 +44,7 @@
     font-weight: bold;
 }
 
-.schema  .stages > div > img {
+.schema  .stages > div img {
     width: 10vw;
     height: 10vw;
     border-radius: 6vw;
@@ -57,3 +57,4 @@
     font-weight: bold;
     margin: .6em 0 0 0;
 }
+
