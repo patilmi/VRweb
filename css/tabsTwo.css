@@ -2,22 +2,28 @@
 
 .details {
 	font-family:  'Montserrat', "Lucida Console", sans-serif;
-    background: #111;
+    color: rgb(225, 226, 210);
+}
+
+.details hr {
+    font-size: 0.1vmin;
+    border-block-color: #333;
+    height: 1em;
+    border-radius: 1em;
 }
 
 .main-box {
     display: flex;
-    /* background: #000; */
-    margin: 2em auto 2em auto;
+    margin: 0 auto;
     padding:0;
     width: 90vw;
-    height: 30vw;
     /* border: thin solid red; */
 }
 
 .box {
-    height: 20vw;
-    padding: 1em;
+    height: 17vw;
+    padding: 0;
+    /* border: thin solid yellow; */
     border-right: thin solid  rgb(225, 226, 210);
     border-right: thin solid  #111;
     -o-transition: 0.6s;
@@ -25,7 +31,6 @@
     position: relative;
     overflow: hidden;
     list-style: none;
-    
 }
 
 .detail {
@@ -34,8 +39,6 @@
     position: absolute;
     right: 0;
     top:0;
-    /* background: rgb(0, 0, 0); */
-    color: rgb(225, 226, 210);
     opacity: 0;
     padding: 0 1em;
     box-sizing:border-box;
@@ -46,40 +49,16 @@
     overflow-y: auto;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
 }
 
-
-
-
-
 .detail::-webkit-scrollbar {
-    width: 1vw;
-}
-
-.detail::-webkit-scrollbar-track {
-    /* background: black; */
+    width: .5vmin;
 }
 
 .detail::-webkit-scrollbar-thumb {
     background-color: rgb(52, 61, 53);
     border-radius: .5vw;
-    border: .35vw solid black;
-}
-
-body::-webkit-scrollbar {
-    width: 1vw;
-}
-
-body::-webkit-scrollbar-track {
-    /* background: black; */
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(52, 61, 53);
-    border-radius: .5vw;
-    border: .35vw solid black;
 }
 
 .box.active {
@@ -107,7 +86,6 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: .3em;
     width: 3em;
     transform: rotate(180deg);
-    /* font-weight: 400; */
     cursor: pointer;
     position: absolute;
     left: 0;
@@ -117,31 +95,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .box.active span {
-	/* left:3em; */
-	/* right:auto; */
 	margin:0;
     font-weight:500;
-    
-    color: rgb(67, 68, 64);
     color: rgb(225, 226, 210);
     text-shadow: 0 0 0.1em;
-}
-
-p {
-	line-height: 1.5em;
-}
-
-.tabIntro {
-    text-align: center;
-    color: rgb(225, 226, 210);
-    padding: 0vh 4vw 5vh 4vw;
-
 }
 
 .details a:link, .details a:visited{
     text-decoration: none;
     color: rgb(231, 170, 90);
-
 }
 
 .details a:link:active, .details a:visited:active {
