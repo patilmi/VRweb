@@ -10,10 +10,7 @@
     width: 100%;
     /* border: thin solid yellow; */
     box-shadow: 0 0 0.5em black, 0 0 1em black, 0 0 2em black, 0 0 4em black;
-}
-
-.bar.top {
-    /* height: 30vmin; */
+    background-color: black;
 }
 
 .bar.top .panel {
@@ -21,17 +18,12 @@
 }
 
 .bar.bottom {
-    /* height: 30vmin; */
-    /* border: thin solid greenyellow; */
     vertical-align: text-bottom;
 }
 
 .bar.bottom .panel {
     bottom: 0;
     vertical-align: text-bottom;
-    bottom: 0;
-    /* border: thin solid yellow; */
-    background-color: black;
 }
 
 .bar .panel > a > div, .bar .panel > div {
