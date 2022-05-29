@@ -40,79 +40,92 @@
 
 <body onload="initDelayed(); init();">
     <div class="frontpageWrapper">
-
-        <div class="top bar">
-            <div class="panel">
-                
-                <a href="html/glossary.html" target="_blank"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark"
-                        viewBox="0 0 24 24">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
-                        <line x1="12" y1="19" x2="12" y2="19.01" />
-                    </svg>
-                    <div>
-                        FAQ
+    
+        <div id=cover-page class="top bar">
+    
+            <!--  Links Bar  --------------------------------------------------------------------------------------------->
+    
+            <div>
+    
+                <div class="panel row">
+                    <div class=col>
+                        <a href="html/glossary.html" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark"
+                                viewBox="0 0 24 24">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
+                                <line x1="12" y1="19" x2="12" y2="19.01" />
+                            </svg>
+                            <div>
+                                FAQ
+                            </div>
+                        </a>
                     </div>
-                </div></a>
-            
-                <a href="https://github.com/patilmi/VR4D" target="_blank"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
-                        viewBox="0 0 24 24">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                    </svg>
-                    <div>
-                        Code
+                    <div class=col>
+                        <a href="https://github.com/patilmi/VR4D" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                                viewBox="0 0 24 24">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
+                            <div>
+                                Code
+                            </div>
+                        </a>
                     </div>
-                </div></a>
-
-                <a href="https://www.youtube.com/channel/UCa48glzMs0NNMnHU3bB8Txw" target="_blank"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
-                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <desc>Download more icon variants from https://tabler-icons.io/i/brand-youtube</desc>
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <rect x="3" y="5" width="18" height="14" rx="4"></rect>
-                        <path d="M10 9l5 3l-5 3z"></path>
-                    </svg>
-                    <div>
-                        Videos
+                    <div class=col>
+                        <a href="https://www.youtube.com/channel/UCa48glzMs0NNMnHU3bB8Txw" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="24"
+                                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/brand-youtube</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <rect x="3" y="5" width="18" height="14" rx="4"></rect>
+                                <path d="M10 9l5 3l-5 3z"></path>
+                            </svg>
+                            <div>
+                                Videos
+                            </div>
+                        </a>
                     </div>
-                </div></a>
-
-               <a href="html/contact.html" target="_blank"> <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mailbox"
-                        viewBox="0 0 24 24">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M10 21v-6.5a3.5 3.5 0 0 0 -7 0v6.5h18v-6a4 4 0 0 0 -4 -4h-10.5" />
-                        <path d="M12 11v-8h4l2 2l-2 2h-4" />
-                        <path d="M6 15h1" />
-                    </svg>
-                    <div>
-                        Contact
+                    <div class=col>
+                        <a href="html/contact.html" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mailbox" viewBox="0 0 24 24">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 21v-6.5a3.5 3.5 0 0 0 -7 0v6.5h18v-6a4 4 0 0 0 -4 -4h-10.5" />
+                                <path d="M12 11v-8h4l2 2l-2 2h-4" />
+                                <path d="M6 15h1" />
+                            </svg>
+                            <div>
+                                Contact
+                            </div>
+                        </a>
                     </div>
-                </div></a>
-
+                </div>
+    
+                <!--  Cover  --------------------------------------------------------------------------------------------->
+    
+                <div>
+                    <div>
+                        <!-- <a href="https://commons.wikimedia.org/wiki/File:Apophysis_3D_fractal_ball.jpg" target="_blank"><img src="images/Apophysis.jpg" /></a> -->
+                        <img src="images/green_fractal.png">
+                    </div>
+                </div>
             </div>
+    
+            <div class=title>
+                <span class=sub>In Pursuit Of</span> The Fourth Dimension
+            </div>
+    
         </div>
+        
+        <!----------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------->
 
         <div class="frontpage">
 
-            <div id=cover-page>
-                <div>
-
-                    <!-- <a href="https://commons.wikimedia.org/wiki/File:Apophysis_3D_fractal_ball.jpg" target="_blank"><img src="images/Apophysis.jpg" /></a> -->
-                    <img src="images/green_fractal.png">
-                    
-                </div>
-                <div class=title>
-                    <span class=sub>In Pursuit Of</span>The Fourth Dimension
-                </div>
-            </div>
-
-            <!----------------------------------------------------------------------------------------------->
+            <!--  Introduction  --------------------------------------------------------------------------------------------->
 
             <div id=intro>
                 <p>
@@ -143,7 +156,7 @@
                 </p>
             </div>
 
-            <!----------------------------------------------------------------------------------------------->
+            <!--  Product Statement  --------------------------------------------------------------------------------------------->
 
             <div class="product centered">
                 <p>
@@ -155,7 +168,7 @@
                 </p>
             </div>
 
-            <!-----------------------------------------------------------------------------------------------> 
+            <!--  Details  ---------------------------------------------------------------------------------------------> 
 
             <div class="details">
                 <h2 id="details">Rotation is the key</h2>
@@ -304,7 +317,7 @@
                 </ul>
             </div>
 
-            <!----------------------------------------------------------------------------------------------->
+            <!--  Demo  --------------------------------------------------------------------------------------------->
             
             <div class="demo">
                 <h2>Emergence of a third dimension</h2>
@@ -356,7 +369,7 @@
                 </div>
             </div>
 
-            <!----------------------------------------------------------------------------------------------->
+            <!--  Schema  --------------------------------------------------------------------------------------------->
 
             <div class="schema centered">
                 <h2 id="schematic">How we do it</h2>
@@ -432,7 +445,7 @@
                 </div>
             </div>
 
-            <!----------------------------------------------------------------------------------------------->
+            <!--  Neural Nets Analogy  --------------------------------------------------------------------------------------------->
 
             <div class="NN">
                 <h2 id="NN">Neural Net Analogy</h2>
@@ -480,7 +493,7 @@
                 </div>
             </div>
 
-            <!----------------------------------------------------------------------------------------------->
+            <!--  Math  --------------------------------------------------------------------------------------------->
 
             <div id=rotation-math class=centered>
 
@@ -632,8 +645,13 @@
                 </div>
             </div>
         </div>
+ 
+        <!--  Footer  --------------------------------------------------------------------------------------------->
 
         <div class="bottom bar">
+
+            <!--  What Next  --------------------------------------------------------------------------------------------->
+
             <div class=end>
                 <h2>What's next?</h2>
                 <div class=row>
@@ -658,63 +676,66 @@
                     </div>
                 </div>
             </div>
+
+            <!--  Links Bar  --------------------------------------------------------------------------------------------->
             
-            <div class="panel">
-                
-                <a href="html/glossary.html" target="_blank"><div>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark"
-                        viewBox="0 0 24 24">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
-                        <line x1="12" y1="19" x2="12" y2="19.01" />
-                    </svg>
-                    <div>
-                        FAQ
-                    </div>
-                
-                </div></a>
-            
-                <a href="https://github.com/patilmi/VR4D" target="_blank"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
-                        viewBox="0 0 24 24">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                    </svg>
-                    <div>
-                        Code
-                    </div>
-                </div></a>
-
-                <a href="https://www.youtube.com/channel/UCa48glzMs0NNMnHU3bB8Txw" target="_blank"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
-                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <desc>Download more icon variants from https://tabler-icons.io/i/brand-youtube</desc>
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <rect x="3" y="5" width="18" height="14" rx="4"></rect>
-                        <path d="M10 9l5 3l-5 3z"></path>
-                    </svg>
-                    <div>
-                        Videos
-                    </div>
-                </div></a>
-
-               <a href="html/contact.html" target="_blank"> <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mailbox"
-                        viewBox="0 0 24 24">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M10 21v-6.5a3.5 3.5 0 0 0 -7 0v6.5h18v-6a4 4 0 0 0 -4 -4h-10.5" />
-                        <path d="M12 11v-8h4l2 2l-2 2h-4" />
-                        <path d="M6 15h1" />
-                    </svg>
-                    <div>
-                        Contact
-                    </div>
-                </div></a>
-
+            <div class="panel row">
+                <div class=col>
+                    <a href="html/glossary.html" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark"
+                            viewBox="0 0 24 24">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
+                            <line x1="12" y1="19" x2="12" y2="19.01" />
+                        </svg>
+                        <div>
+                            FAQ
+                        </div>
+                    </a>
+                </div>
+                <div class=col>
+                    <a href="https://github.com/patilmi/VR4D" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                            viewBox="0 0 24 24">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg>
+                        <div>
+                            Code
+                        </div>
+                    </a>
+                </div>
+                <div class=col>
+                    <a href="https://www.youtube.com/channel/UCa48glzMs0NNMnHU3bB8Txw" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <desc>Download more icon variants from https://tabler-icons.io/i/brand-youtube</desc>
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="3" y="5" width="18" height="14" rx="4"></rect>
+                            <path d="M10 9l5 3l-5 3z"></path>
+                        </svg>
+                        <div>
+                            Videos
+                        </div>
+                    </a>
+                </div>
+                <div class=col>
+                    <a href="html/contact.html" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mailbox" viewBox="0 0 24 24">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 21v-6.5a3.5 3.5 0 0 0 -7 0v6.5h18v-6a4 4 0 0 0 -4 -4h-10.5" />
+                            <path d="M12 11v-8h4l2 2l-2 2h-4" />
+                            <path d="M6 15h1" />
+                        </svg>
+                        <div>
+                            Contact
+                        </div>
+                    </a>
+                </div>
             </div>
+            
         </div>
     </div>
 </body>

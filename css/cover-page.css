@@ -1,11 +1,9 @@
 #cover-page {
-    font-family: Copperplate, Papyrus, fantasy;
     padding: 0;
     margin: 0;
     background-color: black;
     text-align: center;
     /* border: thin solid red; */
-    color:#e30;
     color: rgb(37, 219, 149);
 }
 
@@ -19,6 +17,7 @@
 }
 
 #cover-page .title {
+    font-family: Copperplate, Papyrus, fantasy;
     font-size: 5vh;
     text-shadow: 0 0 .2em;
     height: 30vh;
