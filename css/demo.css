@@ -17,7 +17,6 @@
 }
 
 #animations {
-    background-color: white;
     font-size: 1.5vw;
     /* border: thin solid blue; */
     text-align: center;
@@ -30,11 +29,12 @@
 }
 
 #animation, #randomAnimation{
-    background-color: white;
-    /* color: black; */
-    /* border: thin solid green; */
     height: 20vw;
     width: 42vw;
     padding: 0 1em;
     text-align: center;
+}
+
+.demo, #animation, #randomAnimation {
+    background-color: rgb(243, 239, 245);
 }
