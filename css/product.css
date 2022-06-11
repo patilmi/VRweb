@@ -1,6 +1,8 @@
 
 .product {
-    background-color: lightgray;
+    background-color: rgb(231, 162, 14);
+    background-color: rgb(34, 33, 32);
+    color: rgb(205, 231, 169);
 }
 
 .product .summary {
